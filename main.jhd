@@ -1,0 +1,3 @@
+MODULE main
+	SUBMODULE dzielnik_zegara
+		INSTANCE XLXI_1

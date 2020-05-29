@@ -1,0 +1,33 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+clock S:PIN32
+XLXN_2 S:PIN143
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 XLXI_1/counter<10> XLXI_1/counter<11> XLXN_2 XLXI_1/counter<5>
+		 XLXI_1/counter<12> XLXI_1/counter<6> XLXI_1/counter<13> XLXI_1/counter<14>
+		 XLXI_1/counter<15> XLXI_1/counter<16> XLXI_1/counter<17> XLXI_1/counter<7>
+		 XLXI_1/counter<8> XLXI_1/counter<9> XLXI_1/counter<18> XLXI_1/counter<19>
+		
+PARTITION FB2_8 XLXI_1/counter<0> XLXI_1/counter<1> XLXI_1/counter<2> XLXI_1/counter<3>
+		
+PARTITION FB2_16 XLXI_1/counter<4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
