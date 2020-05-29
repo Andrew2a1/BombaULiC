@@ -1,3 +1,5 @@
 MODULE main
 	SUBMODULE dzielnik_zegara
 		INSTANCE XLXI_1
+	SUBMODULE wybor_cyfry
+		INSTANCE XLXI_2

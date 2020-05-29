@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : main.vhf
--- /___/   /\     Timestamp : 05/29/2020 10:55:33
+-- /___/   /\     Timestamp : 05/29/2020 14:34:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -26,8 +26,7 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity main is
-   port ( clock  : in    std_logic; 
-          XLXN_2 : out   std_logic);
+   port ( clock : in    std_logic);
 end main;
 
 architecture BEHAVIORAL of main is
@@ -39,7 +38,7 @@ architecture BEHAVIORAL of main is
 begin
    XLXI_1 : dzielnik_zegara
       port map (clock=>clock,
-                clock_out=>XLXN_2);
+                clock_out=>open);
    
 end BEHAVIORAL;
 
