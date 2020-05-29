@@ -1,0 +1,5 @@
+[Inputs]
+=cyfra[3:0]=
+[Outputs]
+=katody[6:0]=
+[BiDir]
