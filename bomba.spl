@@ -1,0 +1,11 @@
+[Inputs]
+clock
+=przyciski[1:0]=
+=przelaczniki[1:0]=
+[Outputs]
+=cyfra1[3:0]=
+=cyfra2[3:0]=
+=cyfra3[3:0]=
+=cyfra4[3:0]=
+=diody[3:0]=
+[BiDir]
