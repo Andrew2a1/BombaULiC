@@ -3,3 +3,7 @@ MODULE main
 		INSTANCE XLXI_1
 	SUBMODULE wybor_cyfry
 		INSTANCE XLXI_2
+	SUBMODULE wybor_segmentu
+		INSTANCE XLXI_4
+	SUBMODULE sterowanie_kropka
+		INSTANCE XLXI_5
