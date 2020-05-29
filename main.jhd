@@ -7,3 +7,7 @@ MODULE main
 		INSTANCE XLXI_4
 	SUBMODULE sterowanie_kropka
 		INSTANCE XLXI_5
+	SUBMODULE multiplekser_vect
+		INSTANCE XLXI_6
+	SUBMODULE transkoder_7seg
+		INSTANCE XLXI_7

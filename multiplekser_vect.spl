@@ -1,0 +1,9 @@
+[Inputs]
+=segment[1:0]=
+=cyfra1[3:0]=
+=cyfra2[3:0]=
+=cyfra3[3:0]=
+=cyfra4[3:0]=
+[Outputs]
+=cyfra[3:0]=
+[BiDir]
