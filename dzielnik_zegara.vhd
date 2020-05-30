@@ -27,14 +27,14 @@ entity dzielnik_zegara is
 end dzielnik_zegara;
 
 architecture Behavioral of dzielnik_zegara is
-signal counter : integer range 0 to 800000 := 0; 
+signal counter : integer range 0 to 8000 := 0; 
 
 begin
-	clock_out <= '1' when counter=399 else '0';
+	clock_out <= '1' when counter=7999 else '0';
 
 	process (clock) begin
 		if clock'event and clock='1' then
-			if counter=399 then 
+			if counter=7999 then 
 				counter <= 0;
 			else 
 				counter <= counter + 1;
