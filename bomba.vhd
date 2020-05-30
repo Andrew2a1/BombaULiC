@@ -32,7 +32,6 @@ entity bomba is
 end bomba;
 
 architecture Behavioral of bomba is
-
 begin
 
 

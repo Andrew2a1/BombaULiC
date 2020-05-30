@@ -7,16 +7,11 @@
     </attr>
     <netlist>
         <signal name="clock" />
-        <signal name="XLXN_4" />
-        <signal name="XLXN_5(1:0)" />
-        <signal name="XLXN_6(1:0)" />
-        <signal name="XLXN_7(1:0)" />
         <signal name="segment(3:0)" />
         <signal name="kropka" />
         <signal name="XLXN_10(1:0)" />
         <signal name="XLXN_12(3:0)" />
         <signal name="katody_7seg(6:0)" />
-        <signal name="XLXN_14" />
         <signal name="XLXN_16(3:0)" />
         <signal name="XLXN_17(3:0)" />
         <signal name="XLXN_18(3:0)" />
@@ -24,6 +19,8 @@
         <signal name="diody(3:0)" />
         <signal name="przyciski(1:0)" />
         <signal name="przelaczniki(1:0)" />
+        <signal name="XLXN_20" />
+        <signal name="XLXN_28" />
         <port polarity="Input" name="clock" />
         <port polarity="Output" name="segment(3:0)" />
         <port polarity="Output" name="kropka" />
@@ -102,12 +99,18 @@
             <rect width="64" x="368" y="-44" height="24" />
             <line x2="432" y1="-32" y2="-32" x1="368" />
         </blockdef>
+        <blockdef name="dzielnik_100x">
+            <timestamp>2020-5-30T16:15:47</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="dzielnik_zegara" name="XLXI_1">
             <blockpin signalname="clock" name="clock" />
-            <blockpin signalname="XLXN_14" name="clock_out" />
+            <blockpin signalname="XLXN_28" name="clock_out" />
         </block>
         <block symbolname="wybor_cyfry" name="XLXI_2">
-            <blockpin signalname="XLXN_14" name="clock" />
+            <blockpin signalname="XLXN_28" name="clock" />
             <blockpin signalname="XLXN_10(1:0)" name="cyfra(1:0)" />
         </block>
         <block symbolname="wybor_segmentu" name="XLXI_4">
@@ -131,7 +134,7 @@
             <blockpin signalname="katody_7seg(6:0)" name="katody(6:0)" />
         </block>
         <block symbolname="bomba" name="XLXI_8">
-            <blockpin signalname="XLXN_14" name="clock" />
+            <blockpin signalname="XLXN_20" name="clock" />
             <blockpin signalname="przyciski(1:0)" name="przyciski(1:0)" />
             <blockpin signalname="przelaczniki(1:0)" name="przelaczniki(1:0)" />
             <blockpin signalname="XLXN_16(3:0)" name="cyfra1(3:0)" />
@@ -140,12 +143,17 @@
             <blockpin signalname="XLXN_19(3:0)" name="cyfra4(3:0)" />
             <blockpin signalname="diody(3:0)" name="diody(3:0)" />
         </block>
+        <block symbolname="dzielnik_100x" name="XLXI_9">
+            <blockpin signalname="XLXN_28" name="clock" />
+            <blockpin signalname="XLXN_20" name="clock_out" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="1120" y="736" name="XLXI_1" orien="R0">
         </instance>
         <branch name="clock">
-            <wire x2="1120" y1="704" y2="704" x1="1088" />
+            <wire x2="1104" y1="704" y2="704" x1="1088" />
+            <wire x2="1120" y1="704" y2="704" x1="1104" />
         </branch>
         <iomarker fontsize="28" x="1088" y="704" name="clock" orien="R180" />
         <instance x="1616" y="736" name="XLXI_2" orien="R0">
@@ -186,12 +194,6 @@
         <iomarker fontsize="28" x="3120" y="880" name="kropka" orien="R0" />
         <instance x="1568" y="1440" name="XLXI_8" orien="R0">
         </instance>
-        <branch name="XLXN_14">
-            <wire x2="1520" y1="704" y2="704" x1="1504" />
-            <wire x2="1616" y1="704" y2="704" x1="1520" />
-            <wire x2="1520" y1="704" y2="1152" x1="1520" />
-            <wire x2="1568" y1="1152" y2="1152" x1="1520" />
-        </branch>
         <branch name="XLXN_16(3:0)">
             <wire x2="2144" y1="1152" y2="1152" x1="2000" />
         </branch>
@@ -218,5 +220,17 @@
         </branch>
         <iomarker fontsize="28" x="1200" y="1280" name="przyciski(1:0)" orien="R180" />
         <iomarker fontsize="28" x="1248" y="1408" name="przelaczniki(1:0)" orien="R180" />
+        <branch name="XLXN_20">
+            <wire x2="1520" y1="1136" y2="1152" x1="1520" />
+            <wire x2="1552" y1="1152" y2="1152" x1="1520" />
+            <wire x2="1568" y1="1152" y2="1152" x1="1552" />
+        </branch>
+        <instance x="1488" y="752" name="XLXI_9" orien="R90">
+        </instance>
+        <branch name="XLXN_28">
+            <wire x2="1520" y1="704" y2="704" x1="1504" />
+            <wire x2="1616" y1="704" y2="704" x1="1520" />
+            <wire x2="1520" y1="704" y2="752" x1="1520" />
+        </branch>
     </sheet>
 </drawing>
