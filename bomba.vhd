@@ -35,7 +35,7 @@ end bomba;
 
 architecture Behavioral of bomba is
 signal isOver : std_logic := '0';
-signal isCounting : std_logic := '0';
+signal isCounting : std_logic := '1';
 
 signal reset : std_logic := '0';
 signal stop : std_logic := '0';

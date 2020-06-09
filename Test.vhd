@@ -53,13 +53,20 @@ BEGIN
 	
 	clock_process : process begin
 		clock <= '1';
-		wait for 62 ns;
+		wait for 62.5 ns;
 		clock <= '0';
-		wait for 62 ns;
+		wait for 62.5 ns;
 	end process;
 
    tb : PROCESS
    BEGIN
+		przyciski <= "11";
+		przelaczniki <= "00";
+		
+		wait for 3000 ms;
+		przyciski <= "01";
+		wait for 120 ms;
+		przyciski <= "11";
 		
       WAIT; -- will wait forever
    END PROCESS;
