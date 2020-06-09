@@ -1,7 +1,7 @@
  
 cpldfit:  version P.20131013                        Xilinx Inc.
                                   Fitter Report
-Design Name: main                                Date:  6- 9-2020,  2:25PM
+Design Name: main                                Date:  6- 9-2020,  2:30PM
 Device Used: XC2C256-6-TQ144
 Fitting Status: Successful
 
@@ -9,16 +9,16 @@ Fitting Status: Successful
 
 Macrocells     Product Terms    Function Block   Registers      Pins           
 Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
-68 /256 ( 27%) 194 /896  ( 22%) 169 /640  ( 26%) 46 /256 ( 18%) 21 /118 ( 18%)
+70 /256 ( 27%) 182 /896  ( 20%) 164 /640  ( 26%) 46 /256 ( 18%) 21 /118 ( 18%)
 
 ** Function Block Resources **
 
 Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
 Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
 FB1      16/16*    15/40    16/56     0/ 6    1/1*     0/1      0/1      0/1
-FB2      16/16*    31/40    56/56*    0/ 8    1/1*     0/1      0/1      0/1
-FB3      12/16     37/40    34/56     0/ 6    1/1*     0/1      0/1      0/1
-FB4       8/16     20/40    13/56     0/ 8    1/1*     0/1      0/1      0/1
+FB2      15/16     29/40    56/56*    0/ 8    1/1*     0/1      0/1      0/1
+FB3      14/16     38/40*   26/56     0/ 6    1/1*     0/1      0/1      0/1
+FB4       9/16     24/40    15/56     0/ 8    1/1*     0/1      0/1      0/1
 FB5       0/16      0/40     0/56     0/ 5    0/1      0/1      0/1      0/1
 FB6       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB7       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
@@ -28,11 +28,11 @@ FB10      0/16      0/40     0/56     0/ 9    0/1      0/1      0/1      0/1
 FB11      4/16      2/40     4/56     4/ 8    0/1      0/1      0/1      0/1
 FB12      0/16      0/40     0/56     0/ 6    0/1      0/1      0/1      0/1
 FB13      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
-FB14      5/16     36/40    24/56     5/ 8    1/1*     0/1      0/1      0/1
+FB14      5/16     28/40    18/56     5/ 8    1/1*     0/1      0/1      0/1
 FB15      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
 FB16      7/16     28/40    47/56     7/ 7*   1/1*     0/1      0/1      0/1
          -----    -------  -------   -----    ---      ---      ---      ---
-Total    68/256   169/640  194/896   16/118   6/16     0/16     0/16     0/16
+Total    70/256   164/640  182/896   16/118   6/16     0/16     0/16     0/16
 
 CTC - Control Term Clock
 CTR - Control Term Reset
@@ -85,10 +85,10 @@ segment<0>                 1     2     2    FB11_13 126   I/O       O       LVCM
 segment<1>                 1     2     2    FB11_14 128   I/O       O       LVCMOS18           FAST         
 segment<2>                 1     2     2    FB11_15 129   I/O       O       LVCMOS18           FAST         
 segment<3>                 1     2     2    FB11_16 130   I/O       O       LVCMOS18           FAST         
-diody<0>                   5     25    1    FB14_4  69    I/O       O       LVCMOS18           FAST DFF/S   SET
-diody<1>                   5     25    1    FB14_6  68    I/O       O       LVCMOS18           FAST DFF/S   SET
-diody<2>                   5     25    1    FB14_13 66    I/O       O       LVCMOS18           FAST DFF/S   SET
-diody<3>                   5     24    1    FB14_14 64    I/O       O       LVCMOS18           FAST DFF/S   SET
+diody<0>                   3     9     1    FB14_4  69    I/O       O       LVCMOS18           FAST DEFF/S  SET
+diody<1>                   3     9     1    FB14_6  68    I/O       O       LVCMOS18           FAST DEFF/S  SET
+diody<2>                   3     9     1    FB14_13 66    I/O       O       LVCMOS18           FAST DEFF/S  SET
+diody<3>                   3     9     1    FB14_14 64    I/O       O       LVCMOS18           FAST DEFF/S  SET
 katody_7seg<6>             12    19    1    FB14_16 61    I/O       O       LVCMOS18           FAST         
 katody_7seg<2>             1     1     1    FB16_5  60    I/O       O       LVCMOS18           FAST         
 kropka                     1     8     1    FB16_6  59    I/O       O       LVCMOS18           FAST TFF/S   SET
@@ -98,7 +98,7 @@ katody_7seg<0>             12    19    1    FB16_13 56    I/O       O       LVCM
 katody_7seg<5>             13    19    1    FB16_15 54    I/O       O       LVCMOS18           FAST         
 katody_7seg<1>             12    19    1    FB16_16 53    I/O       O       LVCMOS18           FAST         
 
-** 52 Buried Nodes **
+** 54 Buried Nodes **
 
 Signal                     Total Total Loc     Reg     Reg Init
 Name                       Pts   Inps          Use     State
@@ -108,7 +108,7 @@ XLXI_9/counter<1>          2     9     FB1_3   TFF     RESET
 XLXI_9/counter<0>          1     8     FB1_4   TFF     RESET
 XLXI_1/counter<7>          1     2     FB1_5   TFF     RESET
 XLXI_1/counter<6>          2     8     FB1_6   TFF     RESET
-N_PZ_227                   1     6     FB1_7           
+N_PZ_219                   1     6     FB1_7           
 XLXI_1/counter<5>          1     5     FB1_8   TFF     RESET
 XLXI_1/counter<4>          1     4     FB1_9   TFF     RESET
 XLXI_1/counter<3>          1     3     FB1_10  TFF     RESET
@@ -118,43 +118,45 @@ XLXI_1/counter<8>          2     8     FB1_13  TFF     RESET
 XLXI_1/counter<12>         2     8     FB1_14  TFF     RESET
 XLXI_1/counter<1>          1     1     FB1_15  TFF     RESET
 XLXI_1/counter<0>          0     0     FB1_16  TFF     RESET
-N_PZ_213                   1     4     FB2_1           
-XLXN_18<0>                 5     23    FB2_2   TFF     RESET
-XLXN_16<2>                 4     16    FB2_3   TFF/S   SET
-XLXN_17<1>                 5     20    FB2_4   TFF/S   SET
-XLXN_17<2>                 4     20    FB2_5   TFF     RESET
-XLXN_18<2>                 3     24    FB2_6   TFF/S   SET
-XLXN_18<1>                 5     24    FB2_7   TFF     RESET
-XLXN_18<3>                 3     24    FB2_8   TFF     RESET
-XLXN_19<0>                 3     26    FB2_9   TFF/S   SET
-XLXN_19<3>                 3     28    FB2_10  TFF     RESET
-XLXN_19<1>                 3     28    FB2_11  TFF     RESET
-XLXN_17<0>                 9     23    FB2_12  TFF     RESET
-XLXN_16<3>                 10    23    FB2_13  TFF     RESET
-XLXN_16<0>                 7     23    FB2_14  TFF     RESET
-XLXN_17<3>                 6     23    FB2_15  TFF     RESET
-XLXN_19<2>                 3     29    FB2_16  TFF/S   SET
-XLXI_8/explosion_not00017  2     3     FB3_4           
-N_PZ_294                   1     3     FB3_6           
-XLXI_8/reset_not00011      1     2     FB3_7           
-XLXI_8/explosion_not00015  1     2     FB3_8           
-N_PZ_304                   1     3     FB3_9           
-N_PZ_289                   1     2     FB3_10          
-XLXI_8/isCounting          3     10    FB3_11  DEFF    RESET
-XLXN_16<1>                 5     16    FB3_12  TFF     RESET
+XLXN_16<0>                 4     20    FB2_2   TFF     RESET
+katody_7seg<2>_BUFR        12    18    FB2_3           
+XLXN_17<1>                 5     17    FB2_4   TFF/S   SET
+XLXN_17<2>                 4     17    FB2_5   TFF     RESET
+XLXN_18<2>                 3     21    FB2_6   TFF/S   SET
+XLXN_18<1>                 5     21    FB2_7   TFF     RESET
+XLXN_18<3>                 3     21    FB2_8   TFF     RESET
+XLXN_19<0>                 3     23    FB2_9   TFF/S   SET
+XLXN_19<3>                 3     25    FB2_10  TFF     RESET
+XLXN_19<1>                 3     24    FB2_11  TFF     RESET
+XLXN_17<3>                 6     20    FB2_12  TFF     RESET
+XLXN_18<0>                 5     20    FB2_13  TFF     RESET
+XLXN_17<0>                 8     20    FB2_14  TFF     RESET
+XLXN_16<3>                 7     20    FB2_15  TFF     RESET
+XLXN_19<2>                 3     25    FB2_16  TFF/S   SET
+XLXI_8/stop_not00016       2     2     FB3_3           
+XLXI_8/explosion_not00015  1     2     FB3_4           
+XLXI_8/explosion_not00017  2     3     FB3_5           
+N_PZ_290                   1     3     FB3_6           
+N_PZ_205                   1     4     FB3_7           
+XLXI_8/isCounting__or0001  2     3     FB3_8           
+N_PZ_297                   1     4     FB3_9           
+XLXI_8/isCounting          3     9     FB3_10  DEFF    RESET
+XLXN_16<1>                 5     13    FB3_11  DFF     RESET
 
 Signal                     Total Total Loc     Reg     Reg Init
 Name                       Pts   Inps          Use     State
-N_PZ_277                   4     14    FB3_13          
-XLXI_8/stop_not00016       2     2     FB3_14          
-katody_7seg<2>_BUFR        12    18    FB3_15          
-XLXI_8/stop                2     4     FB3_16  LATCH   RESET
+XLXN_16<2>                 4     13    FB3_12  TFF/S   SET
+N_PZ_267                   4     14    FB3_13          
+N_PZ_283                   1     3     FB3_14          
+XLXI_8/isOver__or0000      3     16    FB3_15          
+XLXI_8/reset_not00011      1     2     FB3_16          
 XLXI_8/explosion           2     3     FB4_7   LATCH   RESET
 XLXI_8/reset               2     2     FB4_8   LATCH   RESET
 XLXN_10<1>                 2     9     FB4_9   TFF     RESET
 XLXI_9/counter<3>          2     11    FB4_10  TFF     RESET
 XLXI_9/counter<4>          2     12    FB4_11  TFF     RESET
 XLXI_9/counter<6>          3     15    FB4_13  TFF     RESET
+XLXI_8/stop                2     4     FB4_14  LATCH   RESET
 XLXI_9/counter<5>          3     15    FB4_15  TFF     RESET
 XLXI_9/counter<2>          4     15    FB4_16  TFF     RESET
 
@@ -205,7 +207,7 @@ XLXI_9/counter<1>             2     FB1_3   143  GSR/I/O I      +
 XLXI_9/counter<0>             1     FB1_4   142  I/O     (b)    +          
 XLXI_1/counter<7>             1     FB1_5        (b)     (b)               
 XLXI_1/counter<6>             2     FB1_6   140  I/O     (b)               
-N_PZ_227                      1     FB1_7        (b)     (b)               
+N_PZ_219                      1     FB1_7        (b)     (b)               
 XLXI_1/counter<5>             1     FB1_8        (b)     (b)               
 XLXI_1/counter<4>             1     FB1_9        (b)     (b)               
 XLXI_1/counter<3>             1     FB1_10       (b)     (b)               
@@ -217,7 +219,7 @@ XLXI_1/counter<1>             1     FB1_15       (b)     (b)
 XLXI_1/counter<0>             0     FB1_16       (b)     (b)               
 
 Signals Used by Logic in Function Block
-  1: N_PZ_227             6: XLXI_1/counter<1>  11: XLXI_1/counter<6> 
+  1: N_PZ_219             6: XLXI_1/counter<1>  11: XLXI_1/counter<6> 
   2: XLXI_1/counter<0>    7: XLXI_1/counter<2>  12: XLXI_1/counter<7> 
   3: XLXI_1/counter<10>   8: XLXI_1/counter<3>  13: XLXI_1/counter<8> 
   4: XLXI_1/counter<11>   9: XLXI_1/counter<4>  14: XLXI_1/counter<9> 
@@ -237,7 +239,7 @@ XLXI_1/counter<7>
                   X.........X............................. 2       
 XLXI_1/counter<6> 
                   X.XXX.....XXXX.......................... 8       
-N_PZ_227          .X...XXXXX.............................. 6       
+N_PZ_219          .X...XXXXX.............................. 6       
 XLXI_1/counter<5> 
                   .X...XXXX............................... 5       
 XLXI_1/counter<4> 
@@ -260,14 +262,14 @@ XLXI_1/counter<0>
                            0         0         0         0
 *********************************** FB2  ***********************************
 This function block is part of I/O Bank number:               2
-Number of function block inputs used/remaining:               31/9
+Number of function block inputs used/remaining:               29/11
 Number of function block control terms used/remaining:        1/3
 Number of PLA product terms used/remaining:                   56/0
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
-N_PZ_213                      1     FB2_1   2    GTS/I/O (b)               
-XLXN_18<0>                    5     FB2_2        (b)     (b)    +          
-XLXN_16<2>                    4     FB2_3   3    GTS/I/O (b)    +          
+(unused)                      0     FB2_1   2    GTS/I/O       
+XLXN_16<0>                    4     FB2_2        (b)     (b)    +          
+katody_7seg<2>_BUFR           12    FB2_3   3    GTS/I/O (b)               
 XLXN_17<1>                    5     FB2_4   4    I/O     (b)    +          
 XLXN_17<2>                    4     FB2_5   5    GTS/I/O (b)    +          
 XLXN_18<2>                    3     FB2_6        (b)     (b)    +          
@@ -276,111 +278,113 @@ XLXN_18<3>                    3     FB2_8        (b)     (b)    +
 XLXN_19<0>                    3     FB2_9        (b)     (b)    +          
 XLXN_19<3>                    3     FB2_10       (b)     (b)    +          
 XLXN_19<1>                    3     FB2_11       (b)     (b)    +          
-XLXN_17<0>                    9     FB2_12  6    GTS/I/O (b)    +          
-XLXN_16<3>                    10    FB2_13  7    I/O     (b)    +          
-XLXN_16<0>                    7     FB2_14  9    I/O     (b)    +          
-XLXN_17<3>                    6     FB2_15  10   I/O     (b)    +          
+XLXN_17<3>                    6     FB2_12  6    GTS/I/O (b)    +          
+XLXN_18<0>                    5     FB2_13  7    I/O     (b)    +          
+XLXN_17<0>                    8     FB2_14  9    I/O     (b)    +          
+XLXN_16<3>                    7     FB2_15  10   I/O     (b)    +          
 XLXN_19<2>                    3     FB2_16       (b)     (b)    +          
 
 Signals Used by Logic in Function Block
-  1: N_PZ_213           12: XLXI_9/counter<4>  22: XLXN_17<3> 
-  2: N_PZ_289           13: XLXI_9/counter<5>  23: XLXN_18<0> 
-  3: N_PZ_304           14: XLXI_9/counter<6>  24: XLXN_18<1> 
-  4: XLXI_8/explosion   15: XLXN_16<0>         25: XLXN_18<2> 
-  5: XLXI_8/isCounting  16: XLXN_16<1>         26: XLXN_18<3> 
-  6: XLXI_8/reset       17: XLXN_16<2>         27: XLXN_19<0> 
-  7: XLXI_8/stop        18: XLXN_16<3>         28: XLXN_19<1> 
-  8: XLXI_9/counter<0>  19: XLXN_17<0>         29: XLXN_19<2> 
-  9: XLXI_9/counter<1>  20: XLXN_17<1>         30: XLXN_19<3> 
- 10: XLXI_9/counter<2>  21: XLXN_17<2>         31: diody<3> 
- 11: XLXI_9/counter<3> 
+  1: N_PZ_205           11: XLXI_9/counter<6>  21: XLXN_18<0> 
+  2: N_PZ_290           12: XLXN_10<1>         22: XLXN_18<1> 
+  3: N_PZ_297           13: XLXN_16<0>         23: XLXN_18<2> 
+  4: XLXI_8/reset       14: XLXN_16<1>         24: XLXN_18<3> 
+  5: XLXI_9/counter<0>  15: XLXN_16<2>         25: XLXN_19<0> 
+  6: XLXI_9/counter<1>  16: XLXN_16<3>         26: XLXN_19<1> 
+  7: XLXI_9/counter<2>  17: XLXN_17<0>         27: XLXN_19<2> 
+  8: XLXI_9/counter<3>  18: XLXN_17<1>         28: XLXN_19<3> 
+  9: XLXI_9/counter<4>  19: XLXN_17<2>         29: kropka 
+ 10: XLXI_9/counter<5>  20: XLXN_17<3>        
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-N_PZ_213          ..........................XXXX.......... 4       
-XLXN_18<0>        ..XXXXXXXXXXXXXXXXXXXXXX......X......... 23      
-XLXN_16<2>        ...XXXXXXXXXXXXXXX............X......... 16      
-XLXN_17<1>        ...XXXXXXXXXXXXXXXXXXX........X......... 20      
-XLXN_17<2>        ...XXXXXXXXXXXXXXXXXXX........X......... 20      
-XLXN_18<2>        ..XXXXXXXXXXXXXXXXXXXXXXX.....X......... 24      
-XLXN_18<1>        ...XXXXXXXXXXXXXXXXXXXXXXX....X......... 24      
-XLXN_18<3>        ...XXXXXXXXXXXXXXXXXXXXXXX....X......... 24      
-XLXN_19<0>        X..XXXXXXXXXXXXXXXXXXXXXXXX...X......... 26      
-XLXN_19<3>        ...XXXXXXXXXXXXXXXXXXXXXXXXXXXX......... 28      
-XLXN_19<1>        XX.XXXXXXXXXXXXXXXXXXXXXXXXX..X......... 28      
-XLXN_17<0>        ..XXXXXXXXXXXXXXXXXXXXXX......X......... 23      
-XLXN_16<3>        ..XXXXXXXXXXXXXXXXXXXXXX......X......... 23      
-XLXN_16<0>        ..XXXXXXXXXXXXXXXXXXXXXX......X......... 23      
-XLXN_17<3>        ..XXXXXXXXXXXXXXXXXXXXXX......X......... 23      
-XLXN_19<2>        XX.XXXXXXXXXXXXXXXXXXXXXXXXXX.X......... 29      
+XLXN_16<0>        .XXXXXXXXXX.XXXXXXXXXX.................. 20      
+katody_7seg<2>_BUFR 
+                  ...........XXXXXXXXXXXXXXXXXX........... 18      
+XLXN_17<1>        ..XXXXXXXXX.XXXXXXXX.................... 17      
+XLXN_17<2>        ..XXXXXXXXX.XXXXXXXX.................... 17      
+XLXN_18<2>        .XXXXXXXXXX.XXXXXXXXXXX................. 21      
+XLXN_18<1>        ..XXXXXXXXX.XXXXXXXXXXXX................ 21      
+XLXN_18<3>        ..XXXXXXXXX.XXXXXXXXXXXX................ 21      
+XLXN_19<0>        X.XXXXXXXXX.XXXXXXXXXXXXX............... 23      
+XLXN_19<3>        ..XXXXXXXXX.XXXXXXXXXXXXXXXX............ 25      
+XLXN_19<1>        X.XXXXXXXXX.XXXXXXXXXXXXXX.............. 24      
+XLXN_17<3>        .XXXXXXXXXX.XXXXXXXXXX.................. 20      
+XLXN_18<0>        .XXXXXXXXXX.XXXXXXXXXX.................. 20      
+XLXN_17<0>        .XXXXXXXXXX.XXXXXXXXXX.................. 20      
+XLXN_16<3>        .XXXXXXXXXX.XXXXXXXXXX.................. 20      
+XLXN_19<2>        X.XXXXXXXXX.XXXXXXXXXXXXXXX............. 25      
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB3  ***********************************
 This function block is part of I/O Bank number:               2
-Number of function block inputs used/remaining:               37/3
+Number of function block inputs used/remaining:               38/2
 Number of function block control terms used/remaining:        1/3
-Number of PLA product terms used/remaining:                   34/22
+Number of PLA product terms used/remaining:                   26/30
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
 (unused)                      0     FB3_1   136  I/O           
 (unused)                      0     FB3_2   135  I/O           
-(unused)                      0     FB3_3   134  I/O           
-XLXI_8/explosion_not00017     2     FB3_4        (b)     (b)               
-(unused)                      0     FB3_5   133  I/O           
-N_PZ_294                      1     FB3_6        (b)     (b)               
-XLXI_8/reset_not00011         1     FB3_7        (b)     (b)               
-XLXI_8/explosion_not00015     1     FB3_8        (b)     (b)               
-N_PZ_304                      1     FB3_9        (b)     (b)               
-N_PZ_289                      1     FB3_10       (b)     (b)               
-XLXI_8/isCounting             3     FB3_11       (b)     (b)    +          
-XLXN_16<1>                    5     FB3_12       (b)     (b)    +          
-N_PZ_277                      4     FB3_13       (b)     (b)               
-XLXI_8/stop_not00016          2     FB3_14  132  I/O     (b)               
-katody_7seg<2>_BUFR           12    FB3_15       (b)     (b)               
-XLXI_8/stop                   2     FB3_16  131  I/O     (b)               
+XLXI_8/stop_not00016          2     FB3_3   134  I/O     (b)               
+XLXI_8/explosion_not00015     1     FB3_4        (b)     (b)               
+XLXI_8/explosion_not00017     2     FB3_5   133  I/O     (b)               
+N_PZ_290                      1     FB3_6        (b)     (b)               
+N_PZ_205                      1     FB3_7        (b)     (b)               
+XLXI_8/isCounting__or0001     2     FB3_8        (b)     (b)               
+N_PZ_297                      1     FB3_9        (b)     (b)               
+XLXI_8/isCounting             3     FB3_10       (b)     (b)    +          
+XLXN_16<1>                    5     FB3_11       (b)     (b)    +          
+XLXN_16<2>                    4     FB3_12       (b)     (b)    +          
+N_PZ_267                      4     FB3_13       (b)     (b)               
+N_PZ_283                      1     FB3_14  132  I/O     (b)               
+XLXI_8/isOver__or0000         3     FB3_15       (b)     (b)               
+XLXI_8/reset_not00011         1     FB3_16  131  I/O     (b)               
 
 Signals Used by Logic in Function Block
-  1: N_PZ_213              14: XLXI_9/counter<6>  26: XLXN_18<2> 
-  2: N_PZ_289              15: XLXN_10<1>         27: XLXN_18<3> 
-  3: XLXI_8/explosion      16: XLXN_16<0>         28: XLXN_19<0> 
-  4: XLXI_8/isCounting     17: XLXN_16<1>         29: XLXN_19<1> 
-  5: XLXI_8/reset          18: XLXN_16<2>         30: XLXN_19<2> 
-  6: XLXI_8/stop           19: XLXN_16<3>         31: XLXN_19<3> 
-  7: XLXI_8/stop_not00016  20: XLXN_17<0>         32: diody<3> 
-  8: XLXI_9/counter<0>     21: XLXN_17<1>         33: kropka 
-  9: XLXI_9/counter<1>     22: XLXN_17<2>         34: przelaczniki<0> 
- 10: XLXI_9/counter<2>     23: XLXN_17<3>         35: przelaczniki<1> 
- 11: XLXI_9/counter<3>     24: XLXN_18<0>         36: przyciski<0> 
- 12: XLXI_9/counter<4>     25: XLXN_18<1>         37: przyciski<1> 
- 13: XLXI_9/counter<5>    
+  1: N_PZ_205                   14: XLXI_9/counter<5>  27: XLXN_18<2> 
+  2: N_PZ_290                   15: XLXI_9/counter<6>  28: XLXN_18<3> 
+  3: N_PZ_297                   16: XLXN_10<1>         29: XLXN_19<0> 
+  4: XLXI_8/explosion           17: XLXN_16<0>         30: XLXN_19<1> 
+  5: XLXI_8/isCounting          18: XLXN_16<1>         31: XLXN_19<2> 
+  6: XLXI_8/isCounting__or0001  19: XLXN_16<2>         32: XLXN_19<3> 
+  7: XLXI_8/reset               20: XLXN_16<3>         33: diody<3> 
+  8: XLXI_8/stop                21: XLXN_17<0>         34: kropka 
+  9: XLXI_9/counter<0>          22: XLXN_17<1>         35: przelaczniki<0> 
+ 10: XLXI_9/counter<1>          23: XLXN_17<2>         36: przelaczniki<1> 
+ 11: XLXI_9/counter<2>          24: XLXN_17<3>         37: przyciski<0> 
+ 12: XLXI_9/counter<3>          25: XLXN_18<0>         38: przyciski<1> 
+ 13: XLXI_9/counter<4>          26: XLXN_18<1>        
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-XLXI_8/explosion_not00017 
-                  .................................XX.X... 3       
-N_PZ_294          .................................XX.X... 3       
-XLXI_8/reset_not00011 
-                  ...................................XX... 2       
-XLXI_8/explosion_not00015 
-                  ...................................XX... 2       
-N_PZ_304          X........................XX............. 3       
-N_PZ_289          ....XX.................................. 2       
-XLXI_8/isCounting 
-                  .XX..X.XXXXXXX.......................... 10      
-XLXN_16<1>        ..XXXX.XXXXXXX.XXXX............X........ 16      
-N_PZ_277          ..............X.XXX.XXX.XXX.XXX.X....... 14      
 XLXI_8/stop_not00016 
-                  .................................XX..... 2       
-katody_7seg<2>_BUFR 
-                  ..............XXXXXXXXXXXXXXXXX.X....... 18      
-XLXI_8/stop       ......X..........................XX.X... 4       
+                  ..................................XX.... 2       
+XLXI_8/explosion_not00015 
+                  ....................................XX.. 2       
+XLXI_8/explosion_not00017 
+                  ..................................XX.X.. 3       
+N_PZ_290          X.........................XX............ 3       
+N_PZ_205          ............................XXXX........ 4       
+XLXI_8/isCounting__or0001 
+                  ...X..XX................................ 3       
+N_PZ_297          ...XX..X........................X....... 4       
+XLXI_8/isCounting 
+                  .....XX.XXXXXXX......................... 9       
+XLXN_16<1>        ..X...X.XXXXXXX.XXXX.................... 13      
+XLXN_16<2>        ..X...X.XXXXXXX.XXXX.................... 13      
+N_PZ_267          ...............X.XXX.XXX.XXX.XXX.X...... 14      
+N_PZ_283          ..................................XX.X.. 3       
+XLXI_8/isOver__or0000 
+                  .X.XX.XX........XXXXXXXXXX......X....... 16      
+XLXI_8/reset_not00011 
+                  ....................................XX.. 2       
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB4  ***********************************
 This function block is part of I/O Bank number:               2
-Number of function block inputs used/remaining:               20/20
+Number of function block inputs used/remaining:               24/16
 Number of function block control terms used/remaining:        1/3
-Number of PLA product terms used/remaining:                   13/43
+Number of PLA product terms used/remaining:                   15/41
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
 (unused)                      0     FB4_1   11   I/O           
@@ -396,34 +400,36 @@ XLXI_9/counter<3>             2     FB4_10       (b)     (b)    +
 XLXI_9/counter<4>             2     FB4_11       (b)     (b)    +          
 (unused)                      0     FB4_12  17   I/O           
 XLXI_9/counter<6>             3     FB4_13       (b)     (b)    +          
-(unused)                      0     FB4_14  18   I/O           
+XLXI_8/stop                   2     FB4_14  18   I/O     (b)               
 XLXI_9/counter<5>             3     FB4_15       (b)     (b)    +          
 XLXI_9/counter<2>             4     FB4_16       (b)     (b)    +          
 
 Signals Used by Logic in Function Block
-  1: N_PZ_227             8: XLXI_1/counter<8>          15: XLXI_9/counter<2> 
-  2: N_PZ_294             9: XLXI_1/counter<9>          16: XLXI_9/counter<3> 
-  3: XLXI_1/counter<10>  10: XLXI_8/explosion_not00015  17: XLXI_9/counter<4> 
-  4: XLXI_1/counter<11>  11: XLXI_8/explosion_not00017  18: XLXI_9/counter<5> 
-  5: XLXI_1/counter<12>  12: XLXI_8/reset_not00011      19: XLXI_9/counter<6> 
-  6: XLXI_1/counter<6>   13: XLXI_9/counter<0>          20: kropka 
-  7: XLXI_1/counter<7>   14: XLXI_9/counter<1>         
+  1: N_PZ_219             9: XLXI_1/counter<9>          17: XLXI_9/counter<3> 
+  2: N_PZ_283            10: XLXI_8/explosion_not00015  18: XLXI_9/counter<4> 
+  3: XLXI_1/counter<10>  11: XLXI_8/explosion_not00017  19: XLXI_9/counter<5> 
+  4: XLXI_1/counter<11>  12: XLXI_8/reset_not00011      20: XLXI_9/counter<6> 
+  5: XLXI_1/counter<12>  13: XLXI_8/stop_not00016       21: kropka 
+  6: XLXI_1/counter<6>   14: XLXI_9/counter<0>          22: przelaczniki<0> 
+  7: XLXI_1/counter<7>   15: XLXI_9/counter<1>          23: przelaczniki<1> 
+  8: XLXI_1/counter<8>   16: XLXI_9/counter<2>          24: przyciski<1> 
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
 XLXI_8/explosion  .X.......XX............................. 3       
 XLXI_8/reset      .X.........X............................ 2       
-XLXN_10<1>        X.XXXXXXX..........X.................... 9       
+XLXN_10<1>        X.XXXXXXX...........X................... 9       
 XLXI_9/counter<3> 
-                  X.XXXXXXX...XXX......................... 11      
+                  X.XXXXXXX....XXX........................ 11      
 XLXI_9/counter<4> 
-                  X.XXXXXXX...XXXX........................ 12      
+                  X.XXXXXXX....XXXX....................... 12      
 XLXI_9/counter<6> 
-                  X.XXXXXXX...XXXXXXX..................... 15      
+                  X.XXXXXXX....XXXXXXX.................... 15      
+XLXI_8/stop       ............X........XXX................ 4       
 XLXI_9/counter<5> 
-                  X.XXXXXXX...XXXXXXX..................... 15      
+                  X.XXXXXXX....XXXXXXX.................... 15      
 XLXI_9/counter<2> 
-                  X.XXXXXXX...XXXXXXX..................... 15      
+                  X.XXXXXXX....XXXXXXX.................... 15      
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB5  ***********************************
@@ -647,49 +653,47 @@ Name                          Pt            No.  Type    Use
 (unused)                      0     FB13_16      (b)           
 *********************************** FB14 ***********************************
 This function block is part of I/O Bank number:               1
-Number of function block inputs used/remaining:               36/4
+Number of function block inputs used/remaining:               28/12
 Number of function block control terms used/remaining:        1/3
-Number of PLA product terms used/remaining:                   24/32
+Number of PLA product terms used/remaining:                   18/38
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
 (unused)                      0     FB14_1  74   I/O           
 (unused)                      0     FB14_2  71   I/O           
 (unused)                      0     FB14_3  70   I/O           
-diody<0>                      5     FB14_4  69   I/O     O      +          
+diody<0>                      3     FB14_4  69   I/O     O      +          
 (unused)                      0     FB14_5       (b)           
-diody<1>                      5     FB14_6  68   I/O     O      +          
+diody<1>                      3     FB14_6  68   I/O     O      +          
 (unused)                      0     FB14_7       (b)           
 (unused)                      0     FB14_8       (b)           
 (unused)                      0     FB14_9       (b)           
 (unused)                      0     FB14_10      (b)           
 (unused)                      0     FB14_11      (b)           
 (unused)                      0     FB14_12      (b)           
-diody<2>                      5     FB14_13 66   I/O     O      +          
-diody<3>                      5     FB14_14 64   I/O     O      +          
+diody<2>                      3     FB14_13 66   I/O     O      +          
+diody<3>                      3     FB14_14 64   I/O     O      +          
 (unused)                      0     FB14_15      (b)           
 katody_7seg<6>                12    FB14_16 61   I/O     O                 
 
 Signals Used by Logic in Function Block
-  1: N_PZ_277           13: XLXI_9/counter<5>  25: XLXN_18<1> 
-  2: N_PZ_289           14: XLXI_9/counter<6>  26: XLXN_18<2> 
-  3: N_PZ_304           15: XLXN_10<1>         27: XLXN_18<3> 
-  4: XLXI_8/explosion   16: XLXN_16<0>         28: XLXN_19<0> 
-  5: XLXI_8/isCounting  17: XLXN_16<1>         29: XLXN_19<1> 
-  6: XLXI_8/reset       18: XLXN_16<2>         30: XLXN_19<2> 
-  7: XLXI_8/stop        19: XLXN_16<3>         31: XLXN_19<3> 
-  8: XLXI_9/counter<0>  20: XLXN_17<0>         32: diody<0> 
-  9: XLXI_9/counter<1>  21: XLXN_17<1>         33: diody<1> 
- 10: XLXI_9/counter<2>  22: XLXN_17<2>         34: diody<2> 
- 11: XLXI_9/counter<3>  23: XLXN_17<3>         35: diody<3> 
- 12: XLXI_9/counter<4>  24: XLXN_18<0>         36: kropka 
+  1: N_PZ_267               11: XLXN_10<1>        20: XLXN_18<0> 
+  2: XLXI_8/isOver__or0000  12: XLXN_16<0>        21: XLXN_18<1> 
+  3: XLXI_8/reset           13: XLXN_16<1>        22: XLXN_18<2> 
+  4: XLXI_9/counter<0>      14: XLXN_16<2>        23: XLXN_18<3> 
+  5: XLXI_9/counter<1>      15: XLXN_16<3>        24: XLXN_19<0> 
+  6: XLXI_9/counter<2>      16: XLXN_17<0>        25: XLXN_19<1> 
+  7: XLXI_9/counter<3>      17: XLXN_17<1>        26: XLXN_19<2> 
+  8: XLXI_9/counter<4>      18: XLXN_17<2>        27: XLXN_19<3> 
+  9: XLXI_9/counter<5>      19: XLXN_17<3>        28: kropka 
+ 10: XLXI_9/counter<6>     
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-diody<0>          .XXXXXXXXXXXXX.XXXXXXXXXX......X..X..... 25      
-diody<1>          .XXXXXXXXXXXXX.XXXXXXXXXX.......X.X..... 25      
-diody<2>          .XXXXXXXXXXXXX.XXXXXXXXXX........XX..... 25      
-diody<3>          .XXXXXXXXXXXXX.XXXXXXXXXX.........X..... 24      
-katody_7seg<6>    X.............XXXXXXXXXXXXXXXXX....X.... 19      
+diody<0>          .XXXXXXXXX.............................. 9       
+diody<1>          .XXXXXXXXX.............................. 9       
+diody<2>          .XXXXXXXXX.............................. 9       
+diody<3>          .XXXXXXXXX.............................. 9       
+katody_7seg<6>    X.........XXXXXXXXXXXXXXXXXX............ 19      
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB15 ***********************************
@@ -740,8 +744,8 @@ katody_7seg<5>                13    FB16_15 54   I/O     O
 katody_7seg<1>                12    FB16_16 53   I/O     O                 
 
 Signals Used by Logic in Function Block
-  1: N_PZ_227            11: XLXN_16<0>        20: XLXN_18<1> 
-  2: N_PZ_277            12: XLXN_16<1>        21: XLXN_18<2> 
+  1: N_PZ_219            11: XLXN_16<0>        20: XLXN_18<1> 
+  2: N_PZ_267            12: XLXN_16<1>        21: XLXN_18<2> 
   3: XLXI_1/counter<10>  13: XLXN_16<2>        22: XLXN_18<3> 
   4: XLXI_1/counter<11>  14: XLXN_16<3>        23: XLXN_19<0> 
   5: XLXI_1/counter<12>  15: XLXN_17<0>        24: XLXN_19<1> 
@@ -767,16 +771,16 @@ katody_7seg<1>    .X.......XXXXXXXXXXXXXXXXX.X............ 19
 ********** Mapped Logic **********
 
 
-N_PZ_213 <= (NOT XLXN_19(0) AND NOT XLXN_19(1) AND NOT XLXN_19(2) AND 
+N_PZ_205 <= (NOT XLXN_19(0) AND NOT XLXN_19(1) AND NOT XLXN_19(2) AND 
 	NOT XLXN_19(3));
 
 
-N_PZ_227 <= (XLXI_1/counter(0) AND XLXI_1/counter(1) AND 
+N_PZ_219 <= (XLXI_1/counter(0) AND XLXI_1/counter(1) AND 
 	XLXI_1/counter(2) AND XLXI_1/counter(3) AND XLXI_1/counter(4) AND 
 	XLXI_1/counter(5));
 
 
-N_PZ_277 <= ((NOT XLXN_17(1) AND NOT XLXN_17(2) AND XLXN_17(3) AND NOT kropka AND 
+N_PZ_267 <= ((NOT XLXN_17(1) AND NOT XLXN_17(2) AND XLXN_17(3) AND NOT kropka AND 
 	NOT XLXN_10(1))
 	OR (NOT XLXN_16(1) AND NOT XLXN_16(2) AND XLXN_16(3) AND kropka AND 
 	NOT XLXN_10(1))
@@ -786,13 +790,14 @@ N_PZ_277 <= ((NOT XLXN_17(1) AND NOT XLXN_17(2) AND XLXN_17(3) AND NOT kropka AN
 	XLXN_10(1)));
 
 
-N_PZ_289 <= (NOT XLXI_8/reset AND NOT XLXI_8/stop);
+N_PZ_283 <= (NOT przyciski(1) AND NOT przelaczniki(1) AND NOT przelaczniki(0));
 
 
-N_PZ_294 <= (NOT przyciski(1) AND NOT przelaczniki(1) AND NOT przelaczniki(0));
+N_PZ_290 <= (NOT XLXN_18(2) AND NOT XLXN_18(3) AND N_PZ_205);
 
 
-N_PZ_304 <= (NOT XLXN_18(2) AND NOT XLXN_18(3) AND N_PZ_213);
+N_PZ_297 <= (NOT XLXI_8/explosion AND diody(3) AND XLXI_8/isCounting AND 
+	NOT XLXI_8/stop);
 
 FTCPE_XLXI_1/counter0: FTCPE port map (XLXI_1/counter(0),'0',clock,'0','0','1');
 
@@ -814,50 +819,50 @@ XLXI_1/counter_T(5) <= (XLXI_1/counter(0) AND XLXI_1/counter(1) AND
 	XLXI_1/counter(2) AND XLXI_1/counter(3) AND XLXI_1/counter(4));
 
 FTCPE_XLXI_1/counter6: FTCPE port map (XLXI_1/counter(6),XLXI_1/counter_T(6),clock,'0','0','1');
-XLXI_1/counter_T(6) <= NOT (((NOT N_PZ_227)
+XLXI_1/counter_T(6) <= NOT (((NOT N_PZ_219)
 	OR (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
 	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12))));
 
 FTCPE_XLXI_1/counter7: FTCPE port map (XLXI_1/counter(7),XLXI_1/counter_T(7),clock,'0','0','1');
-XLXI_1/counter_T(7) <= (XLXI_1/counter(6) AND N_PZ_227);
+XLXI_1/counter_T(7) <= (XLXI_1/counter(6) AND N_PZ_219);
 
 FTCPE_XLXI_1/counter8: FTCPE port map (XLXI_1/counter(8),XLXI_1/counter_T(8),clock,'0','0','1');
-XLXI_1/counter_T(8) <= ((XLXI_1/counter(6) AND XLXI_1/counter(7) AND N_PZ_227)
+XLXI_1/counter_T(8) <= ((XLXI_1/counter(6) AND XLXI_1/counter(7) AND N_PZ_219)
 	OR (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12)));
 
 FTCPE_XLXI_1/counter9: FTCPE port map (XLXI_1/counter(9),XLXI_1/counter_T(9),clock,'0','0','1');
-XLXI_1/counter_T(9) <= ((XLXI_1/counter(6) AND XLXI_1/counter(7) AND N_PZ_227 AND 
+XLXI_1/counter_T(9) <= ((XLXI_1/counter(6) AND XLXI_1/counter(7) AND N_PZ_219 AND 
 	XLXI_1/counter(8))
 	OR (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12)));
 
 FTCPE_XLXI_1/counter10: FTCPE port map (XLXI_1/counter(10),XLXI_1/counter_T(10),clock,'0','0','1');
-XLXI_1/counter_T(10) <= ((XLXI_1/counter(6) AND XLXI_1/counter(7) AND N_PZ_227 AND 
+XLXI_1/counter_T(10) <= ((XLXI_1/counter(6) AND XLXI_1/counter(7) AND N_PZ_219 AND 
 	XLXI_1/counter(8) AND XLXI_1/counter(9))
 	OR (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12)));
 
 FTCPE_XLXI_1/counter11: FTCPE port map (XLXI_1/counter(11),XLXI_1/counter_T(11),clock,'0','0','1');
 XLXI_1/counter_T(11) <= ((XLXI_1/counter(10) AND XLXI_1/counter(6) AND 
-	XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND XLXI_1/counter(9))
+	XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND XLXI_1/counter(9))
 	OR (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12)));
 
 FTCPE_XLXI_1/counter12: FTCPE port map (XLXI_1/counter(12),XLXI_1/counter_T(12),clock,'0','0','1');
 XLXI_1/counter_T(12) <= ((XLXI_1/counter(10) AND XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9))
 	OR (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12)));
 
-LDCP_XLXI_8/explosion: LDCP port map (XLXI_8/explosion,NOT N_PZ_294,NOT ,'0','0');
+LDCP_XLXI_8/explosion: LDCP port map (XLXI_8/explosion,NOT N_PZ_283,NOT ,'0','0');
 
 
 XLXI_8/explosion_not00015 <= (przyciski(1) AND NOT przyciski(0));
@@ -866,13 +871,24 @@ XLXI_8/explosion_not00015 <= (przyciski(1) AND NOT przyciski(0));
 XLXI_8/explosion_not00017 <= ((NOT przyciski(1) AND NOT przelaczniki(1))
 	OR (NOT przyciski(1) AND NOT przelaczniki(0)));
 
-FDCPE_XLXI_8/isCounting: FDCPE port map (XLXI_8/isCounting,NOT XLXI_8/stop,XLXI_8/isCounting_C,'0','0',XLXI_8/isCounting_CE);
+FDCPE_XLXI_8/isCounting: FDCPE port map (XLXI_8/isCounting,XLXI_8/reset,XLXI_8/isCounting_C,'0','0',NOT XLXI_8/isCounting__or0001);
 XLXI_8/isCounting_C <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
-XLXI_8/isCounting_CE <= (NOT XLXI_8/explosion AND NOT N_PZ_289);
 
-LDCP_XLXI_8/reset: LDCP port map (XLXI_8/reset,N_PZ_294,NOT ,'0','0');
+
+XLXI_8/isCounting__or0001 <= ((NOT XLXI_8/reset AND XLXI_8/explosion)
+	OR (NOT XLXI_8/reset AND NOT XLXI_8/stop));
+
+
+XLXI_8/isOver__or0000 <= ((XLXI_8/reset)
+	OR (XLXI_8/explosion)
+	OR (diody(3) AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND 
+	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND XLXI_8/isCounting AND 
+	NOT XLXI_8/stop AND NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND 
+	NOT XLXN_18(1) AND N_PZ_290));
+
+LDCP_XLXI_8/reset: LDCP port map (XLXI_8/reset,N_PZ_283,NOT ,'0','0');
 
 
 XLXI_8/reset_not00011 <= (przyciski(1) AND przyciski(0));
@@ -887,12 +903,12 @@ XLXI_8/stop_not00016 <= ((przelaczniki(1) AND NOT przelaczniki(0))
 
 FTCPE_XLXI_9/counter0: FTCPE port map (XLXI_9/counter(0),'0',XLXI_9/counter_C(0),'0','0','1');
 XLXI_9/counter_C(0) <= (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12));
 
 FTCPE_XLXI_9/counter1: FTCPE port map (XLXI_9/counter(1),XLXI_9/counter(0),XLXI_9/counter_C(1),'0','0','1');
 XLXI_9/counter_C(1) <= (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12));
 
 FTCPE_XLXI_9/counter2: FTCPE port map (XLXI_9/counter(2),XLXI_9/counter_T(2),XLXI_9/counter_C(2),'0','0','1');
@@ -901,21 +917,21 @@ XLXI_9/counter_T(2) <= NOT (((NOT XLXI_9/counter(0))
 	OR (NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND 
 	NOT XLXI_9/counter(4) AND XLXI_9/counter(5) AND XLXI_9/counter(6))));
 XLXI_9/counter_C(2) <= (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12));
 
 FTCPE_XLXI_9/counter3: FTCPE port map (XLXI_9/counter(3),XLXI_9/counter_T(3),XLXI_9/counter_C(3),'0','0','1');
 XLXI_9/counter_T(3) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	XLXI_9/counter(2));
 XLXI_9/counter_C(3) <= (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12));
 
 FTCPE_XLXI_9/counter4: FTCPE port map (XLXI_9/counter(4),XLXI_9/counter_T(4),XLXI_9/counter_C(4),'0','0','1');
 XLXI_9/counter_T(4) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	XLXI_9/counter(2) AND XLXI_9/counter(3));
 XLXI_9/counter_C(4) <= (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12));
 
 FTCPE_XLXI_9/counter5: FTCPE port map (XLXI_9/counter(5),XLXI_9/counter_T(5),XLXI_9/counter_C(5),'0','0','1');
@@ -925,7 +941,7 @@ XLXI_9/counter_T(5) <= ((XLXI_9/counter(0) AND XLXI_9/counter(1) AND
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6)));
 XLXI_9/counter_C(5) <= (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12));
 
 FTCPE_XLXI_9/counter6: FTCPE port map (XLXI_9/counter(6),XLXI_9/counter_T(6),XLXI_9/counter_C(6),'0','0','1');
@@ -936,204 +952,154 @@ XLXI_9/counter_T(6) <= ((XLXI_9/counter(0) AND XLXI_9/counter(1) AND
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6)));
 XLXI_9/counter_C(6) <= (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12));
 
 FTCPE_XLXN_101: FTCPE port map (XLXN_10(1),NOT kropka,XLXN_10_C(1),'0','0','1');
 XLXN_10_C(1) <= (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12));
 
 FTCPE_XLXN_160: FTCPE port map (XLXN_16(0),XLXN_16_T(0),XLXN_16_C(0),'0','0','1');
-XLXN_16_T(0) <= NOT (((XLXI_8/explosion)
-	OR (XLXI_8/stop)
-	OR (XLXI_8/reset AND NOT XLXN_16(0))
-	OR (NOT XLXI_8/reset AND NOT diody(3))
-	OR (NOT XLXI_8/reset AND NOT XLXI_8/isCounting)
+XLXN_16_T(0) <= NOT (((XLXI_8/reset AND NOT XLXN_16(0))
+	OR (NOT XLXI_8/reset AND NOT N_PZ_297)
 	OR (NOT XLXN_17(0) AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND 
 	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND 
-	NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND N_PZ_304)));
+	NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND N_PZ_290)));
 XLXN_16_C(0) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
-FTCPE_XLXN_161: FTCPE port map (XLXN_16(1),XLXN_16_T(1),XLXN_16_C(1),'0','0','1');
-XLXN_16_T(1) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	XLXN_16(1))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/stop AND diody(3) AND 
-	XLXI_8/isCounting AND NOT XLXN_16(0) AND XLXN_16(1))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND XLXN_16(2))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND XLXN_16(3)));
+FDCPE_XLXN_161: FDCPE port map (XLXN_16(1),XLXN_16_D(1),XLXN_16_C(1),'0','0','1');
+XLXN_16_D(1) <= ((NOT XLXI_8/reset AND XLXN_16(0) AND XLXN_16(1))
+	OR (NOT XLXI_8/reset AND XLXN_16(1) AND NOT N_PZ_297)
+	OR (NOT XLXI_8/reset AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
+	XLXN_16(2) AND N_PZ_297)
+	OR (NOT XLXI_8/reset AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
+	N_PZ_297 AND XLXN_16(3)));
 XLXN_16_C(1) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_162: FTCPE port map (XLXN_16(2),XLXN_16_T(2),XLXN_16_C(2),'0','0','1');
-XLXN_16_T(2) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	NOT XLXN_16(2))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
-	XLXN_16(2))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
-	XLXN_16(3)));
+XLXN_16_T(2) <= ((XLXI_8/reset AND NOT XLXN_16(2))
+	OR (NOT XLXI_8/reset AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
+	XLXN_16(2) AND N_PZ_297)
+	OR (NOT XLXI_8/reset AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
+	N_PZ_297 AND XLXN_16(3)));
 XLXN_16_C(2) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_163: FTCPE port map (XLXN_16(3),XLXN_16_T(3),XLXN_16_C(3),'0','0','1');
-XLXN_16_T(3) <= NOT (((XLXI_8/explosion)
-	OR (XLXI_8/stop)
-	OR (XLXI_8/reset AND NOT XLXN_16(3))
-	OR (NOT XLXI_8/reset AND NOT diody(3))
-	OR (NOT XLXI_8/reset AND NOT XLXI_8/isCounting)
+XLXN_16_T(3) <= NOT (((XLXI_8/reset AND NOT XLXN_16(3))
 	OR (NOT XLXI_8/reset AND XLXN_16(0))
 	OR (NOT XLXI_8/reset AND XLXN_16(1))
 	OR (NOT XLXI_8/reset AND XLXN_16(2))
+	OR (NOT XLXI_8/reset AND NOT N_PZ_297)
 	OR (NOT XLXN_17(0) AND NOT XLXN_18(0) AND NOT XLXN_17(1) AND 
-	NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND N_PZ_304)));
+	NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND N_PZ_290)));
 XLXN_16_C(3) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_170: FTCPE port map (XLXN_17(0),XLXN_17_T(0),XLXN_17_C(0),'0','0','1');
-XLXN_17_T(0) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	XLXN_17(0))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/stop AND diody(3) AND 
-	XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
-	NOT XLXN_16(2) AND NOT XLXN_16(3))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND XLXN_18(0) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND XLXN_17(1) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
-	NOT XLXN_16(2) AND NOT XLXN_16(3) AND XLXN_17(2))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
-	NOT XLXN_16(2) AND NOT XLXN_16(3) AND XLXN_17(3))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
-	NOT XLXN_16(2) AND NOT XLXN_16(3) AND XLXN_18(1))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_16(1) AND 
-	NOT XLXN_16(2) AND NOT XLXN_16(3) AND NOT N_PZ_304));
+XLXN_17_T(0) <= NOT (((XLXI_8/reset AND NOT XLXN_17(0))
+	OR (NOT XLXI_8/reset AND XLXN_16(0))
+	OR (NOT XLXI_8/reset AND XLXN_16(1))
+	OR (NOT XLXI_8/reset AND XLXN_16(2))
+	OR (NOT XLXI_8/reset AND NOT N_PZ_297)
+	OR (NOT XLXI_8/reset AND XLXN_16(3))
+	OR (NOT XLXN_17(0) AND NOT XLXN_18(0) AND NOT XLXN_17(1) AND 
+	NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND N_PZ_290)));
 XLXN_17_C(0) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_171: FTCPE port map (XLXN_17(1),XLXN_17_T(1),XLXN_17_C(1),'0','0','1');
-XLXN_17_T(1) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	NOT XLXN_17(1))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND XLXN_17(2))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND XLXN_17(3)));
+XLXN_17_T(1) <= ((XLXI_8/reset AND NOT XLXN_17(1))
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3))
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND XLXN_17(2))
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND XLXN_17(3)));
 XLXN_17_C(1) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_172: FTCPE port map (XLXN_17(2),XLXN_17_T(2),XLXN_17_C(2),'0','0','1');
-XLXN_17_T(2) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	XLXN_17(2))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/stop AND diody(3) AND 
-	NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_17(1) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND XLXN_17(2))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND 
+XLXN_17_T(2) <= ((XLXI_8/reset AND XLXN_17(2))
+	OR (NOT XLXN_17(0) AND NOT XLXN_16(0) AND NOT XLXN_17(1) AND 
+	NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND XLXN_17(2))
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND 
 	XLXN_17(3)));
 XLXN_17_C(2) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_173: FTCPE port map (XLXN_17(3),XLXN_17_T(3),XLXN_17_C(3),'0','0','1');
-XLXN_17_T(3) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
+XLXN_17_T(3) <= ((XLXI_8/reset AND XLXN_17(3))
+	OR (NOT XLXN_17(0) AND NOT XLXN_16(0) AND NOT XLXN_17(1) AND 
+	NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND NOT XLXN_17(2) AND 
 	XLXN_17(3))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/stop AND diody(3) AND 
-	NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_17(1) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND NOT XLXN_17(2) AND 
-	XLXN_17(3))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND 
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND 
 	NOT XLXN_16(3) AND NOT XLXN_17(2))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND 
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND 
 	NOT XLXN_17(2) AND XLXN_18(1))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND 
-	NOT XLXN_17(2) AND NOT N_PZ_304));
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND 
+	NOT XLXN_17(2) AND NOT N_PZ_290));
 XLXN_17_C(3) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_180: FTCPE port map (XLXN_18(0),XLXN_18_T(0),XLXN_18_C(0),'0','0','1');
-XLXN_18_T(0) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	XLXN_18(0))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/stop AND diody(3) AND 
-	NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND XLXN_18(0) AND 
-	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND 
+XLXN_18_T(0) <= ((XLXI_8/reset AND XLXN_18(0))
+	OR (NOT XLXN_17(0) AND NOT XLXN_16(0) AND XLXN_18(0) AND 
+	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND 
 	NOT XLXN_17(2) AND NOT XLXN_17(3))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND 
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND 
 	NOT XLXN_17(2) AND NOT XLXN_17(3) AND XLXN_18(1))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND 
-	NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT N_PZ_304));
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND 
+	NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT N_PZ_290));
 XLXN_18_C(0) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_181: FTCPE port map (XLXN_18(1),XLXN_18_T(1),XLXN_18_C(1),'0','0','1');
-XLXN_18_T(1) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	XLXN_18(1))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/stop AND diody(3) AND 
-	NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND 
-	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND 
+XLXN_18_T(1) <= ((XLXI_8/reset AND XLXN_18(1))
+	OR (NOT XLXN_17(0) AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND 
+	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND 
 	NOT XLXN_17(2) AND NOT XLXN_17(3) AND XLXN_18(1))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND 
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND 
 	NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND XLXN_18(2))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND 
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND 
 	NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND XLXN_18(3)));
 XLXN_18_C(1) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_182: FTCPE port map (XLXN_18(2),XLXN_18_T(2),XLXN_18_C(2),'0','0','1');
-XLXN_18_T(2) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	NOT XLXN_18(2))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND 
-	NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND NOT N_PZ_304));
+XLXN_18_T(2) <= ((XLXI_8/reset AND NOT XLXN_18(2))
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND 
+	NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND NOT N_PZ_290));
 XLXN_18_C(2) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_183: FTCPE port map (XLXN_18(3),XLXN_18_T(3),XLXN_18_C(3),'0','0','1');
-XLXN_18_T(3) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	XLXN_18(3))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/stop AND diody(3) AND 
-	NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND 
-	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND 
+XLXN_18_T(3) <= ((XLXI_8/reset AND XLXN_18(3))
+	OR (NOT XLXN_17(0) AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND 
+	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND 
 	NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND NOT XLXN_18(2) AND 
 	XLXN_18(3)));
 XLXN_18_C(3) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
@@ -1141,47 +1107,39 @@ XLXN_18_C(3) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_190: FTCPE port map (XLXN_19(0),XLXN_19_T(0),XLXN_19_C(0),'0','0','1');
-XLXN_19_T(0) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	NOT XLXN_19(0))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/reset AND NOT XLXI_8/stop AND 
-	diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND 
-	NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND 
+XLXN_19_T(0) <= ((XLXI_8/reset AND NOT XLXN_19(0))
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND 
 	NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND 
-	NOT XLXN_18(2) AND NOT XLXN_18(3) AND NOT N_PZ_213));
+	NOT XLXN_18(2) AND NOT XLXN_18(3) AND NOT N_PZ_205));
 XLXN_19_C(0) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_191: FTCPE port map (XLXN_19(1),XLXN_19_T(1),XLXN_19_C(1),'0','0','1');
-XLXN_19_T(1) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	XLXN_19(1))
-	OR (NOT XLXI_8/explosion AND diody(3) AND NOT XLXN_17(0) AND 
-	XLXI_8/isCounting AND N_PZ_289 AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND NOT XLXN_17(1) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND NOT XLXN_17(2) AND 
-	NOT XLXN_17(3) AND NOT XLXN_18(1) AND NOT XLXN_18(2) AND NOT XLXN_18(3) AND NOT N_PZ_213 AND 
-	NOT XLXN_19(0)));
+XLXN_19_T(1) <= ((XLXI_8/reset AND XLXN_19(1))
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND 
+	NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND 
+	NOT XLXN_18(2) AND NOT XLXN_18(3) AND NOT N_PZ_205 AND NOT XLXN_19(0)));
 XLXN_19_C(1) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_192: FTCPE port map (XLXN_19(2),XLXN_19_T(2),XLXN_19_C(2),'0','0','1');
-XLXN_19_T(2) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	NOT XLXN_19(2))
-	OR (NOT XLXI_8/explosion AND diody(3) AND NOT XLXN_17(0) AND 
-	XLXI_8/isCounting AND N_PZ_289 AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND NOT XLXN_17(1) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND NOT XLXN_17(2) AND 
-	NOT XLXN_17(3) AND NOT XLXN_18(1) AND NOT XLXN_18(2) AND NOT XLXN_18(3) AND NOT N_PZ_213 AND 
-	NOT XLXN_19(0) AND NOT XLXN_19(1)));
+XLXN_19_T(2) <= ((XLXI_8/reset AND NOT XLXN_19(2))
+	OR (NOT XLXI_8/reset AND NOT XLXN_17(0) AND NOT XLXN_16(0) AND 
+	NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND 
+	NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND 
+	NOT XLXN_18(2) AND NOT XLXN_18(3) AND NOT N_PZ_205 AND NOT XLXN_19(0) AND NOT XLXN_19(1)));
 XLXN_19_C(2) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 FTCPE_XLXN_193: FTCPE port map (XLXN_19(3),XLXN_19_T(3),XLXN_19_C(3),'0','0','1');
-XLXN_19_T(3) <= ((NOT XLXI_8/explosion AND XLXI_8/reset AND NOT XLXI_8/stop AND 
-	XLXN_19(3))
-	OR (NOT XLXI_8/explosion AND NOT XLXI_8/stop AND diody(3) AND 
-	NOT XLXN_17(0) AND XLXI_8/isCounting AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND 
-	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND 
+XLXN_19_T(3) <= ((XLXI_8/reset AND XLXN_19(3))
+	OR (NOT XLXN_17(0) AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND 
+	NOT XLXN_17(1) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND N_PZ_297 AND NOT XLXN_16(3) AND 
 	NOT XLXN_17(2) AND NOT XLXN_17(3) AND NOT XLXN_18(1) AND NOT XLXN_18(2) AND 
 	NOT XLXN_18(3) AND NOT XLXN_19(0) AND NOT XLXN_19(1) AND NOT XLXN_19(2) AND 
 	XLXN_19(3)));
@@ -1189,97 +1147,69 @@ XLXN_19_C(3) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
-FDCPE_diody0: FDCPE port map (diody(0),diody_D(0),diody_C(0),'0','0','1');
-diody_D(0) <= NOT (((XLXI_8/explosion)
-	OR (NOT XLXI_8/reset AND NOT diody(0))
-	OR (NOT diody(0) AND XLXI_8/stop)
-	OR (diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND 
-	N_PZ_289 AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND NOT XLXN_17(1) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND NOT XLXN_17(2) AND 
-	NOT XLXN_17(3) AND NOT XLXN_18(1) AND N_PZ_304)));
+FDCPE_diody0: FDCPE port map (diody(0),XLXI_8/reset,diody_C(0),'0','0',XLXI_8/isOver__or0000);
 diody_C(0) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
-FDCPE_diody1: FDCPE port map (diody(1),diody_D(1),diody_C(1),'0','0','1');
-diody_D(1) <= NOT (((XLXI_8/explosion)
-	OR (NOT XLXI_8/reset AND NOT diody(1))
-	OR (XLXI_8/stop AND NOT diody(1))
-	OR (diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND 
-	N_PZ_289 AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND NOT XLXN_17(1) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND NOT XLXN_17(2) AND 
-	NOT XLXN_17(3) AND NOT XLXN_18(1) AND N_PZ_304)));
+FDCPE_diody1: FDCPE port map (diody(1),XLXI_8/reset,diody_C(1),'0','0',XLXI_8/isOver__or0000);
 diody_C(1) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
-FDCPE_diody2: FDCPE port map (diody(2),diody_D(2),diody_C(2),'0','0','1');
-diody_D(2) <= NOT (((XLXI_8/explosion)
-	OR (NOT XLXI_8/reset AND NOT diody(2))
-	OR (XLXI_8/stop AND NOT diody(2))
-	OR (diody(3) AND NOT XLXN_17(0) AND XLXI_8/isCounting AND 
-	N_PZ_289 AND NOT XLXN_16(0) AND NOT XLXN_18(0) AND NOT XLXN_17(1) AND 
-	NOT XLXN_16(1) AND NOT XLXN_16(2) AND NOT XLXN_16(3) AND NOT XLXN_17(2) AND 
-	NOT XLXN_17(3) AND NOT XLXN_18(1) AND N_PZ_304)));
+FDCPE_diody2: FDCPE port map (diody(2),XLXI_8/reset,diody_C(2),'0','0',XLXI_8/isOver__or0000);
 diody_C(2) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
-FDCPE_diody3: FDCPE port map (diody(3),diody_D(3),diody_C(3),'0','0','1');
-diody_D(3) <= NOT (((XLXI_8/explosion)
-	OR (NOT XLXI_8/reset AND NOT diody(3))
-	OR (XLXI_8/stop AND NOT diody(3))
-	OR (NOT XLXN_17(0) AND XLXI_8/isCounting AND N_PZ_289 AND 
-	NOT XLXN_16(0) AND NOT XLXN_18(0) AND NOT XLXN_17(1) AND NOT XLXN_16(1) AND 
-	NOT XLXN_16(2) AND NOT XLXN_16(3) AND NOT XLXN_17(2) AND NOT XLXN_17(3) AND 
-	NOT XLXN_18(1) AND N_PZ_304)));
+FDCPE_diody3: FDCPE port map (diody(3),XLXI_8/reset,diody_C(3),'0','0',XLXI_8/isOver__or0000);
 diody_C(3) <= (XLXI_9/counter(0) AND XLXI_9/counter(1) AND 
 	NOT XLXI_9/counter(2) AND NOT XLXI_9/counter(3) AND NOT XLXI_9/counter(4) AND 
 	XLXI_9/counter(5) AND XLXI_9/counter(6));
 
 
-katody_7seg(0) <= ((XLXN_16(3) AND kropka AND NOT XLXN_10(1) AND NOT N_PZ_277)
-	OR (XLXN_17(3) AND NOT kropka AND NOT XLXN_10(1) AND NOT N_PZ_277)
-	OR (XLXN_18(3) AND kropka AND XLXN_10(1) AND NOT N_PZ_277)
-	OR (XLXN_19(3) AND NOT kropka AND XLXN_10(1) AND NOT N_PZ_277)
+katody_7seg(0) <= ((XLXN_16(3) AND kropka AND NOT XLXN_10(1) AND NOT N_PZ_267)
+	OR (XLXN_17(3) AND NOT kropka AND NOT XLXN_10(1) AND NOT N_PZ_267)
+	OR (XLXN_18(3) AND kropka AND XLXN_10(1) AND NOT N_PZ_267)
+	OR (XLXN_19(3) AND NOT kropka AND XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_17(0) AND NOT XLXN_17(1) AND NOT XLXN_17(2) AND NOT kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (NOT XLXN_17(0) AND NOT XLXN_17(1) AND XLXN_17(2) AND NOT kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_16(0) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (NOT XLXN_16(0) AND NOT XLXN_16(1) AND XLXN_16(2) AND kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_18(0) AND NOT XLXN_18(1) AND NOT XLXN_18(2) AND kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277)
+	XLXN_10(1) AND NOT N_PZ_267)
 	OR (NOT XLXN_18(0) AND NOT XLXN_18(1) AND XLXN_18(2) AND kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277)
+	XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_19(0) AND NOT XLXN_19(1) AND NOT XLXN_19(2) AND NOT kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277)
+	XLXN_10(1) AND NOT N_PZ_267)
 	OR (NOT XLXN_19(0) AND NOT XLXN_19(1) AND XLXN_19(2) AND NOT kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277));
+	XLXN_10(1) AND NOT N_PZ_267));
 
 
-katody_7seg(1) <= ((XLXN_16(3) AND kropka AND NOT XLXN_10(1) AND NOT N_PZ_277)
-	OR (XLXN_17(3) AND NOT kropka AND NOT XLXN_10(1) AND NOT N_PZ_277)
-	OR (XLXN_18(3) AND kropka AND XLXN_10(1) AND NOT N_PZ_277)
-	OR (XLXN_19(3) AND NOT kropka AND XLXN_10(1) AND NOT N_PZ_277)
+katody_7seg(1) <= ((XLXN_16(3) AND kropka AND NOT XLXN_10(1) AND NOT N_PZ_267)
+	OR (XLXN_17(3) AND NOT kropka AND NOT XLXN_10(1) AND NOT N_PZ_267)
+	OR (XLXN_18(3) AND kropka AND XLXN_10(1) AND NOT N_PZ_267)
+	OR (XLXN_19(3) AND NOT kropka AND XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_17(0) AND NOT XLXN_17(1) AND XLXN_17(2) AND NOT kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (NOT XLXN_17(0) AND XLXN_17(1) AND XLXN_17(2) AND NOT kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_16(0) AND NOT XLXN_16(1) AND XLXN_16(2) AND kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (NOT XLXN_16(0) AND XLXN_16(1) AND XLXN_16(2) AND kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_18(0) AND NOT XLXN_18(1) AND XLXN_18(2) AND kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277)
+	XLXN_10(1) AND NOT N_PZ_267)
 	OR (NOT XLXN_18(0) AND XLXN_18(1) AND XLXN_18(2) AND kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277)
+	XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_19(0) AND NOT XLXN_19(1) AND XLXN_19(2) AND NOT kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277)
+	XLXN_10(1) AND NOT N_PZ_267)
 	OR (NOT XLXN_19(0) AND XLXN_19(1) AND XLXN_19(2) AND NOT kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277));
+	XLXN_10(1) AND NOT N_PZ_267));
 
 
 katody_7seg(2)_BUFR <= NOT (((XLXN_17(0) AND NOT XLXN_17(3) AND NOT kropka AND NOT XLXN_10(1))
@@ -1299,7 +1229,7 @@ katody_7seg(2)_BUFR <= NOT (((XLXN_17(0) AND NOT XLXN_17(3) AND NOT kropka AND N
 katody_7seg(2) <= katody_7seg(2)_BUFR;
 
 
-katody_7seg(3) <= NOT (((N_PZ_277)
+katody_7seg(3) <= NOT (((N_PZ_267)
 	OR (NOT XLXN_17(0) AND XLXN_17(1) AND NOT XLXN_17(3) AND NOT kropka AND 
 	NOT XLXN_10(1))
 	OR (NOT XLXN_16(0) AND XLXN_16(1) AND NOT XLXN_16(3) AND kropka AND 
@@ -1344,7 +1274,7 @@ katody_7seg(4) <= NOT (((NOT XLXN_17(0) AND XLXN_17(1) AND NOT XLXN_17(3) AND NO
 	XLXN_10(1))));
 
 
-katody_7seg(5) <= NOT (((N_PZ_277)
+katody_7seg(5) <= NOT (((N_PZ_267)
 	OR (NOT XLXN_17(0) AND NOT XLXN_17(1) AND NOT XLXN_17(2) AND NOT kropka AND 
 	NOT XLXN_10(1))
 	OR (NOT XLXN_17(0) AND XLXN_17(2) AND NOT XLXN_17(3) AND NOT kropka AND 
@@ -1371,30 +1301,30 @@ katody_7seg(5) <= NOT (((N_PZ_277)
 	XLXN_10(1))));
 
 
-katody_7seg(6) <= ((XLXN_16(3) AND kropka AND NOT XLXN_10(1) AND NOT N_PZ_277)
-	OR (XLXN_17(3) AND NOT kropka AND NOT XLXN_10(1) AND NOT N_PZ_277)
-	OR (XLXN_18(3) AND kropka AND XLXN_10(1) AND NOT N_PZ_277)
-	OR (XLXN_19(3) AND NOT kropka AND XLXN_10(1) AND NOT N_PZ_277)
+katody_7seg(6) <= ((XLXN_16(3) AND kropka AND NOT XLXN_10(1) AND NOT N_PZ_267)
+	OR (XLXN_17(3) AND NOT kropka AND NOT XLXN_10(1) AND NOT N_PZ_267)
+	OR (XLXN_18(3) AND kropka AND XLXN_10(1) AND NOT N_PZ_267)
+	OR (XLXN_19(3) AND NOT kropka AND XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_17(0) AND XLXN_17(1) AND XLXN_17(2) AND NOT kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_17(0) AND NOT XLXN_17(1) AND NOT XLXN_17(2) AND NOT kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_16(0) AND XLXN_16(1) AND XLXN_16(2) AND kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_16(0) AND NOT XLXN_16(1) AND NOT XLXN_16(2) AND kropka AND 
-	NOT XLXN_10(1) AND NOT N_PZ_277)
+	NOT XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_18(0) AND XLXN_18(1) AND XLXN_18(2) AND kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277)
+	XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_18(0) AND NOT XLXN_18(1) AND NOT XLXN_18(2) AND kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277)
+	XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_19(0) AND XLXN_19(1) AND XLXN_19(2) AND NOT kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277)
+	XLXN_10(1) AND NOT N_PZ_267)
 	OR (XLXN_19(0) AND NOT XLXN_19(1) AND NOT XLXN_19(2) AND NOT kropka AND 
-	XLXN_10(1) AND NOT N_PZ_277));
+	XLXN_10(1) AND NOT N_PZ_267));
 
 FTCPE_kropka: FTCPE port map (kropka,'0',kropka_C,'0','0','1');
 kropka_C <= (XLXI_1/counter(10) AND NOT XLXI_1/counter(6) AND 
-	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_227 AND XLXI_1/counter(8) AND 
+	XLXI_1/counter(11) AND NOT XLXI_1/counter(7) AND N_PZ_219 AND XLXI_1/counter(8) AND 
 	XLXI_1/counter(9) AND XLXI_1/counter(12));
 
 

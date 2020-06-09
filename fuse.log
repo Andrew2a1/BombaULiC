@@ -1,0 +1,39 @@
+Running: F:\programy\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/main_main_sch_tb_isim_beh.exe -prj F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/main_main_sch_tb_beh.prj work.main_main_sch_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/wybor_segmentu.vhd" into library work
+Parsing VHDL file "F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/wybor_cyfry.vhd" into library work
+Parsing VHDL file "F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/transkoder_7seg.vhd" into library work
+Parsing VHDL file "F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/sterowanie_kropka.vhd" into library work
+Parsing VHDL file "F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/multiplekser_vect.vhd" into library work
+Parsing VHDL file "F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/dzielnik_zegara.vhd" into library work
+Parsing VHDL file "F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/dzielnik_100x.vhd" into library work
+Parsing VHDL file "F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/bomba.vhd" into library work
+Parsing VHDL file "F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/main.vhf" into library work
+Parsing VHDL file "F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/Test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity dzielnik_zegara [dzielnik_zegara_default]
+Compiling architecture behavioral of entity wybor_cyfry [wybor_cyfry_default]
+Compiling architecture behavioral of entity wybor_segmentu [wybor_segmentu_default]
+Compiling architecture behavioral of entity sterowanie_kropka [sterowanie_kropka_default]
+Compiling architecture behavioral of entity multiplekser_vect [multiplekser_vect_default]
+Compiling architecture behavioral of entity transkoder_7seg [transkoder_7seg_default]
+Compiling architecture behavioral of entity bomba [bomba_default]
+Compiling architecture behavioral of entity dzielnik_100x [dzielnik_100x_default]
+Compiling architecture behavioral of entity main [main_default]
+Compiling architecture behavioral of entity main_main_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 25 VHDL Units
+Built simulation executable F:/dokumenty szkola/semestr_4/ulic_lab/BombaULiC/main_main_sch_tb_isim_beh.exe
+Fuse Memory Usage: 51860 KB
+Fuse CPU Usage: 733 ms

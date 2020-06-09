@@ -28,23 +28,22 @@ segment<3> S:PIN130
 ;It shows where your internal equations were placed in the last successful fit.
 
 PARTITION FB1_1 XLXI_1/counter<11> XLXI_1/counter<10> XLXI_9/counter<1> XLXI_9/counter<0>
-		 XLXI_1/counter<7> XLXI_1/counter<6> N_PZ_227 XLXI_1/counter<5>
+		 XLXI_1/counter<7> XLXI_1/counter<6> N_PZ_219 XLXI_1/counter<5>
 		 XLXI_1/counter<4> XLXI_1/counter<3> XLXI_1/counter<2> XLXI_1/counter<9>
 		 XLXI_1/counter<8> XLXI_1/counter<12> XLXI_1/counter<1> XLXI_1/counter<0>
 		
-PARTITION FB2_1 N_PZ_213 XLXN_18<0> XLXN_16<2> XLXN_17<1>
-		 XLXN_17<2> XLXN_18<2> XLXN_18<1> XLXN_18<3>
-		 XLXN_19<0> XLXN_19<3> XLXN_19<1> XLXN_17<0>
-		 XLXN_16<3> XLXN_16<0> XLXN_17<3> XLXN_19<2>
-		
-PARTITION FB3_4 XLXI_8/explosion_not00017
-PARTITION FB3_6 N_PZ_294 XLXI_8/reset_not00011 XLXI_8/explosion_not00015 N_PZ_304
-		 N_PZ_289 XLXI_8/isCounting XLXN_16<1> N_PZ_277
-		 XLXI_8/stop_not00016 katody_7seg<2>_BUFR XLXI_8/stop
+PARTITION FB2_2 XLXN_16<0> katody_7seg<2>_BUFR XLXN_17<1> XLXN_17<2>
+		 XLXN_18<2> XLXN_18<1> XLXN_18<3> XLXN_19<0>
+		 XLXN_19<3> XLXN_19<1> XLXN_17<3> XLXN_18<0>
+		 XLXN_17<0> XLXN_16<3> XLXN_19<2>
+PARTITION FB3_3 XLXI_8/stop_not00016 XLXI_8/explosion_not00015 XLXI_8/explosion_not00017 N_PZ_290
+		 N_PZ_205 XLXI_8/isCounting__or0001 N_PZ_297 XLXI_8/isCounting
+		 XLXN_16<1> XLXN_16<2> N_PZ_267 N_PZ_283
+		 XLXI_8/isOver__or0000 XLXI_8/reset_not00011
 PARTITION FB4_7 XLXI_8/explosion XLXI_8/reset XLXN_10<1> XLXI_9/counter<3>
 		 XLXI_9/counter<4>
-PARTITION FB4_13 XLXI_9/counter<6>
-PARTITION FB4_15 XLXI_9/counter<5> XLXI_9/counter<2>
+PARTITION FB4_13 XLXI_9/counter<6> XLXI_8/stop XLXI_9/counter<5> XLXI_9/counter<2>
+		
 
 
 
