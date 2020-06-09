@@ -83,17 +83,17 @@ begin
 
 	process(clock) begin
 		if clock'event and clock='1' then
-			if explosion = '1' then
-				isOver <= '1';
-			elsif stop = '1' then
-				isCounting <= '0';
-			elsif reset = '1' then
+			if reset = '1' then
 				isOver <= '0';
 				isCounting <= '1';
 				u <= "0100";
 				s0 <= "0010";
 				s1 <= "0100";
 				m <= "0101";
+			elsif explosion = '1' then
+				isOver <= '1';
+			elsif stop = '1' then
+				isCounting <= '0';
 			elsif isOver = '0' and isCounting = '1' then
 				if u = "0000" then
 					if (s0 or s1 or m) = "0000" then
