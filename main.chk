@@ -29,7 +29,7 @@ Signal[17] [ 0: XLXI_1/counter<11>(145)  ][ 1: XLXI_1/counter<10>(146)  ][ 2: XL
 ----------------- B l o c k 1 ------------------
 PLApt(56/56), Fanin(29/38), Clk(0/3), Bct(1/4), Pin(0/8), Mcell(15/16)
 PLApts[56/56] 25 165 24 164 51 27 145 20 163 23 144 18 143 155 156 19 159 15 102 160 26 28 29 31 101 13 32 100 14 142 154 158 22 141 150 151 157 17 140 153 16 148 149 152 55 58 60 65 68 70 77 79 82 84 90 92
-Fanins[29] kropka.n N_PZ_205.n N_PZ_290.n N_PZ_297.n XLXI_8/reset.n XLXI_9/counter<0>.n XLXI_9/counter<1>.n XLXI_9/counter<2>.n XLXI_9/counter<3>.n XLXI_9/counter<4>.n XLXI_9/counter<5>.n XLXI_9/counter<6>.n XLXN_10<1>.n XLXN_16<0>.n XLXN_16<1>.n XLXN_16<2>.n XLXN_16<3>.n XLXN_17<0>.n XLXN_17<1>.n XLXN_17<2>.n XLXN_17<3>.n XLXN_18<0>.n XLXN_18<1>.n XLXN_18<2>.n XLXN_18<3>.n XLXN_19<0>.n XLXN_19<1>.n XLXN_19<2>.n XLXN_19<3>.n
+Fanins[29] kropka.n N_PZ_205.n N_PZ_294.n N_PZ_301.n XLXI_8/reset.n XLXI_9/counter<0>.n XLXI_9/counter<1>.n XLXI_9/counter<2>.n XLXI_9/counter<3>.n XLXI_9/counter<4>.n XLXI_9/counter<5>.n XLXI_9/counter<6>.n XLXN_10<1>.n XLXN_16<0>.n XLXN_16<1>.n XLXN_16<2>.n XLXN_16<3>.n XLXN_17<0>.n XLXN_17<1>.n XLXN_17<2>.n XLXN_17<3>.n XLXN_18<0>.n XLXN_18<1>.n XLXN_18<2>.n XLXN_18<3>.n XLXN_19<0>.n XLXN_19<1>.n XLXN_19<2>.n XLXN_19<3>.n
 clk[0] 
 CTC: (pt=51) XLXI_9/counter<0> XLXI_9/counter<1> XLXI_9/counter<2>' XLXI_9/counter<3>' XLXI_9/counter<4>' XLXI_9/counter<5> XLXI_9/counter<6> ;
 CTR: 
@@ -48,27 +48,27 @@ Signal[15] [ 0: (2)  ][ 1: XLXN_16<0>(162)  ][ 2: katody_7seg<2>_BUFR(163) (3)  
 ----------------- B l o c k 2 ------------------
 PLApt(26/56), Fanin(38/38), Clk(0/3), Bct(1/4), Pin(0/6), Mcell(14/16)
 PLApts[26/56] 12 33 103 57 51 67 81 89 21 146 147 30 161 34 35 1 4 3 5 10 () () () () () 162 () () 11 () () () () () 36 () () 97 () () () () () () () () () () () 6 () () () () () 9
-Fanins[38] diody<3>.n kropka.n N_PZ_205.n N_PZ_290.n N_PZ_297.n XLXI_8/explosion.n XLXI_8/isCounting.n XLXI_8/isCounting__or0001.n XLXI_8/reset.n XLXI_8/stop.n XLXI_9/counter<0>.n XLXI_9/counter<1>.n XLXI_9/counter<2>.n XLXI_9/counter<3>.n XLXI_9/counter<4>.n XLXI_9/counter<5>.n XLXI_9/counter<6>.n XLXN_10<1>.n XLXN_16<0>.n XLXN_16<1>.n XLXN_16<2>.n XLXN_16<3>.n XLXN_17<0>.n XLXN_17<1>.n XLXN_17<2>.n XLXN_17<3>.n XLXN_18<0>.n XLXN_18<1>.n XLXN_18<2>.n XLXN_18<3>.n XLXN_19<0>.n XLXN_19<1>.n XLXN_19<2>.n XLXN_19<3>.n przelaczniki<0>.p przelaczniki<1>.p przyciski<0>.p przyciski<1>.p
+Fanins[38] diody<3>.n kropka.n N_PZ_205.n N_PZ_294.n N_PZ_301.n XLXI_8/explosion.n XLXI_8/isCounting.n XLXI_8/isCounting__or0001.n XLXI_8/reset.n XLXI_8/stop.n XLXI_9/counter<0>.n XLXI_9/counter<1>.n XLXI_9/counter<2>.n XLXI_9/counter<3>.n XLXI_9/counter<4>.n XLXI_9/counter<5>.n XLXI_9/counter<6>.n XLXN_10<1>.n XLXN_16<0>.n XLXN_16<1>.n XLXN_16<2>.n XLXN_16<3>.n XLXN_17<0>.n XLXN_17<1>.n XLXN_17<2>.n XLXN_17<3>.n XLXN_18<0>.n XLXN_18<1>.n XLXN_18<2>.n XLXN_18<3>.n XLXN_19<0>.n XLXN_19<1>.n XLXN_19<2>.n XLXN_19<3>.n przelaczniki<0>.p przelaczniki<1>.p przyciski<0>.p przyciski<1>.p
 clk[0] 
 CTC: (pt=51) XLXI_9/counter<0> XLXI_9/counter<1> XLXI_9/counter<2>' XLXI_9/counter<3>' XLXI_9/counter<4>' XLXI_9/counter<5> XLXI_9/counter<6> ;
 CTR: 
 CTS: 
 CTE: 
 vref: [0]
-Signal[14] [XLXI_8/isOver__or0000(191)] [N_PZ_267(189)] [XLXN_16<2>(188)] [XLXN_16<1>(187)]  
-           [XLXI_8/isCounting(186)] [N_PZ_297(185)] [XLXI_8/isCounting__or0001(184)] [N_PZ_205(183)]  
-           [N_PZ_290(182)] [XLXI_8/explosion_not00015(180)] [XLXI_8/reset_not00011(192)] [N_PZ_283(190)]  
+Signal[14] [XLXI_8/isOver__or0000(191)] [N_PZ_266(189)] [XLXN_16<2>(188)] [XLXN_16<1>(187)]  
+           [XLXI_8/isCounting(186)] [N_PZ_301(185)] [XLXI_8/isCounting__or0001(184)] [N_PZ_205(183)]  
+           [N_PZ_294(182)] [XLXI_8/explosion_not00015(180)] [XLXI_8/reset_not00011(192)] [N_PZ_289(190)]  
            [XLXI_8/explosion_not00017(181)] [XLXI_8/stop_not00016(179)] 
 Signal[14] [ 0: (136)  ][ 1: (135)  ][ 2: XLXI_8/stop_not00016(179) (134)  ][ 3:  
-           XLXI_8/explosion_not00015(180)  ][ 4: XLXI_8/explosion_not00017(181) (133)  ][ 5: N_PZ_290(182)  ] 
-           [ 6: N_PZ_205(183)  ][ 7: XLXI_8/isCounting__or0001(184)  ][ 8: N_PZ_297(185)  ][ 9:  
-           XLXI_8/isCounting(186)  ][ 10: XLXN_16<1>(187)  ][ 11: XLXN_16<2>(188)  ][ 12: N_PZ_267(189)  ] 
-           [ 13: N_PZ_283(190) (132)  ][ 14: XLXI_8/isOver__or0000(191)  ][ 15: XLXI_8/reset_not00011(192)  
+           XLXI_8/explosion_not00015(180)  ][ 4: XLXI_8/explosion_not00017(181) (133)  ][ 5: N_PZ_294(182)  ] 
+           [ 6: N_PZ_205(183)  ][ 7: XLXI_8/isCounting__or0001(184)  ][ 8: N_PZ_301(185)  ][ 9:  
+           XLXI_8/isCounting(186)  ][ 10: XLXN_16<1>(187)  ][ 11: XLXN_16<2>(188)  ][ 12: N_PZ_266(189)  ] 
+           [ 13: N_PZ_289(190) (132)  ][ 14: XLXI_8/isOver__or0000(191)  ][ 15: XLXI_8/reset_not00011(192)  
            (131)  ]
 ----------------- B l o c k 3 ------------------
 PLApt(15/56), Fanin(24/38), Clk(0/3), Bct(1/4), Pin(0/8), Mcell(9/16)
 PLApts[15/50] 38 40 50 43 138 51 44 130 2 () () () () () () () () () () () () () () () () () () () 98 () () 131 () () 7 () () 41 () () 42 () () () () () () () () 99
-Fanins[24] kropka.n N_PZ_219.n N_PZ_283.n XLXI_1/counter<10>.n XLXI_1/counter<11>.n XLXI_1/counter<12>.n XLXI_1/counter<6>.n XLXI_1/counter<7>.n XLXI_1/counter<8>.n XLXI_1/counter<9>.n XLXI_8/explosion_not00015.n XLXI_8/explosion_not00017.n XLXI_8/reset_not00011.n XLXI_8/stop_not00016.n XLXI_9/counter<0>.n XLXI_9/counter<1>.n XLXI_9/counter<2>.n XLXI_9/counter<3>.n XLXI_9/counter<4>.n XLXI_9/counter<5>.n XLXI_9/counter<6>.n przelaczniki<0>.p przelaczniki<1>.p przyciski<1>.p
+Fanins[24] kropka.n N_PZ_219.n N_PZ_289.n XLXI_1/counter<10>.n XLXI_1/counter<11>.n XLXI_1/counter<12>.n XLXI_1/counter<6>.n XLXI_1/counter<7>.n XLXI_1/counter<8>.n XLXI_1/counter<9>.n XLXI_8/explosion_not00015.n XLXI_8/explosion_not00017.n XLXI_8/reset_not00011.n XLXI_8/stop_not00016.n XLXI_9/counter<0>.n XLXI_9/counter<1>.n XLXI_9/counter<2>.n XLXI_9/counter<3>.n XLXI_9/counter<4>.n XLXI_9/counter<5>.n XLXI_9/counter<6>.n przelaczniki<0>.p przelaczniki<1>.p przyciski<1>.p
 clk[0] 
 CTC: (pt=138) XLXI_1/counter<10> XLXI_1/counter<11> XLXI_1/counter<6>' XLXI_1/counter<7>' XLXI_1/counter<8> XLXI_1/counter<9> XLXI_1/counter<12> N_PZ_219 ;
 CTR: 
@@ -133,7 +133,7 @@ Signal[ 1] [ 0:  ][ 1: (100)  ][ 2:  ][ 3:  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ]
 ----------------- B l o c k 13 ------------------
 PLApt(18/56), Fanin(28/38), Clk(0/3), Bct(1/4), Pin(5/8), Mcell(5/16)
 PLApts[18/50] 12 106 110 111 51 112 116 117 118 122 123 127 128 129 () () () () () 104 () () () () () 104 () () () () () () () () () () () () () () () () () () () () 104 () () 104
-Fanins[28] kropka.n N_PZ_267.n XLXI_8/isOver__or0000.n XLXI_8/reset.n XLXI_9/counter<0>.n XLXI_9/counter<1>.n XLXI_9/counter<2>.n XLXI_9/counter<3>.n XLXI_9/counter<4>.n XLXI_9/counter<5>.n XLXI_9/counter<6>.n XLXN_10<1>.n XLXN_16<0>.n XLXN_16<1>.n XLXN_16<2>.n XLXN_16<3>.n XLXN_17<0>.n XLXN_17<1>.n XLXN_17<2>.n XLXN_17<3>.n XLXN_18<0>.n XLXN_18<1>.n XLXN_18<2>.n XLXN_18<3>.n XLXN_19<0>.n XLXN_19<1>.n XLXN_19<2>.n XLXN_19<3>.n
+Fanins[28] kropka.n N_PZ_266.n XLXI_8/isOver__or0000.n XLXI_8/reset.n XLXI_9/counter<0>.n XLXI_9/counter<1>.n XLXI_9/counter<2>.n XLXI_9/counter<3>.n XLXI_9/counter<4>.n XLXI_9/counter<5>.n XLXI_9/counter<6>.n XLXN_10<1>.n XLXN_16<0>.n XLXN_16<1>.n XLXN_16<2>.n XLXN_16<3>.n XLXN_17<0>.n XLXN_17<1>.n XLXN_17<2>.n XLXN_17<3>.n XLXN_18<0>.n XLXN_18<1>.n XLXN_18<2>.n XLXN_18<3>.n XLXN_19<0>.n XLXN_19<1>.n XLXN_19<2>.n XLXN_19<3>.n
 clk[0] 
 CTC: (pt=51) XLXI_9/counter<0> XLXI_9/counter<1> XLXI_9/counter<2>' XLXI_9/counter<3>' XLXI_9/counter<4>' XLXI_9/counter<5> XLXI_9/counter<6> ;
 CTR: 
@@ -149,7 +149,7 @@ Signal[ 5] [ 0: (74)  ][ 1: (71)  ][ 2: (70)  ][ 3: diody<0>(356) diody<0>(69)  
 ----------------- B l o c k 15 ------------------
 PLApt(47/56), Fanin(28/38), Clk(0/3), Bct(1/4), Pin(7/7), Mcell(7/16)
 PLApts[47/47] 59 63 64 69 138 73 74 83 87 88 91 95 96 105 56 61 62 66 71 72 78 80 166 85 86 93 94 109 110 111 115 116 117 121 122 126 127 128 129 107 108 113 114 119 120 124 125
-Fanins[28] kropka.n N_PZ_219.n N_PZ_267.n XLXI_1/counter<10>.n XLXI_1/counter<11>.n XLXI_1/counter<12>.n XLXI_1/counter<6>.n XLXI_1/counter<7>.n XLXI_1/counter<8>.n XLXI_1/counter<9>.n XLXN_10<1>.n XLXN_16<0>.n XLXN_16<1>.n XLXN_16<2>.n XLXN_16<3>.n XLXN_17<0>.n XLXN_17<1>.n XLXN_17<2>.n XLXN_17<3>.n XLXN_18<0>.n XLXN_18<1>.n XLXN_18<2>.n XLXN_18<3>.n XLXN_19<0>.n XLXN_19<1>.n XLXN_19<2>.n XLXN_19<3>.n katody_7seg<2>_BUFR.n
+Fanins[28] kropka.n N_PZ_219.n N_PZ_266.n XLXI_1/counter<10>.n XLXI_1/counter<11>.n XLXI_1/counter<12>.n XLXI_1/counter<6>.n XLXI_1/counter<7>.n XLXI_1/counter<8>.n XLXI_1/counter<9>.n XLXN_10<1>.n XLXN_16<0>.n XLXN_16<1>.n XLXN_16<2>.n XLXN_16<3>.n XLXN_17<0>.n XLXN_17<1>.n XLXN_17<2>.n XLXN_17<3>.n XLXN_18<0>.n XLXN_18<1>.n XLXN_18<2>.n XLXN_18<3>.n XLXN_19<0>.n XLXN_19<1>.n XLXN_19<2>.n XLXN_19<3>.n katody_7seg<2>_BUFR.n
 clk[0] 
 CTC: (pt=138) XLXI_1/counter<10> XLXI_1/counter<11> XLXI_1/counter<6>' XLXI_1/counter<7>' XLXI_1/counter<8> XLXI_1/counter<9> XLXI_1/counter<12> N_PZ_219 ;
 CTR: 

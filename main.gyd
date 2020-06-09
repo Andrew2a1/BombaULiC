@@ -36,9 +36,9 @@ PARTITION FB2_2 XLXN_16<0> katody_7seg<2>_BUFR XLXN_17<1> XLXN_17<2>
 		 XLXN_18<2> XLXN_18<1> XLXN_18<3> XLXN_19<0>
 		 XLXN_19<3> XLXN_19<1> XLXN_17<3> XLXN_18<0>
 		 XLXN_17<0> XLXN_16<3> XLXN_19<2>
-PARTITION FB3_3 XLXI_8/stop_not00016 XLXI_8/explosion_not00015 XLXI_8/explosion_not00017 N_PZ_290
-		 N_PZ_205 XLXI_8/isCounting__or0001 N_PZ_297 XLXI_8/isCounting
-		 XLXN_16<1> XLXN_16<2> N_PZ_267 N_PZ_283
+PARTITION FB3_3 XLXI_8/stop_not00016 XLXI_8/explosion_not00015 XLXI_8/explosion_not00017 N_PZ_294
+		 N_PZ_205 XLXI_8/isCounting__or0001 N_PZ_301 XLXI_8/isCounting
+		 XLXN_16<1> XLXN_16<2> N_PZ_266 N_PZ_289
 		 XLXI_8/isOver__or0000 XLXI_8/reset_not00011
 PARTITION FB4_7 XLXI_8/explosion XLXI_8/reset XLXN_10<1> XLXI_9/counter<3>
 		 XLXI_9/counter<4>

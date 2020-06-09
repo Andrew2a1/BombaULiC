@@ -15,19 +15,19 @@ EQ | 5 |
 MACROCELL | 3 | 7 | XLXI_8/reset_MC
 ATTRIBUTES | 2148008736 | 0
 OUTPUTMC | 23 | 13 | 3 | 13 | 13 | 2 | 9 | 2 | 7 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 4 | 1 | 14 | 2 | 11 | 2 | 10 | 1 | 3 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 13 | 5 | 13 | 12
-INPUTS | 2 | N_PZ_283  | XLXI_8/reset_not00011
+INPUTS | 2 | N_PZ_289  | XLXI_8/reset_not00011
 INPUTMC | 2 | 2 | 13 | 2 | 15
 EQ | 2 | 
-   XLXI_8/reset.D = N_PZ_283;	// (1 pt, 1 inp)
-    XLXI_8/reset.LH = !(!N_PZ_283 & !XLXI_8/reset_not00011);	// PTC	(1 pt, 2 inp)
+   XLXI_8/reset.D = N_PZ_289;	// (1 pt, 1 inp)
+    XLXI_8/reset.LH = !(!N_PZ_289 & !XLXI_8/reset_not00011);	// PTC	(1 pt, 2 inp)
 
-MACROCELL | 2 | 13 | N_PZ_283_MC
+MACROCELL | 2 | 13 | N_PZ_289_MC
 ATTRIBUTES | 536871680 | 0
 OUTPUTMC | 2 | 3 | 7 | 3 | 6
 INPUTS | 3 | przyciski<1>  | przelaczniki<1>  | przelaczniki<0>
 INPUTP | 3 | 142 | 190 | 62
 EQ | 1 | 
-   N_PZ_283 = !przyciski<1> & !przelaczniki<1> & !przelaczniki<0>;	// (1 pt, 3 inp)
+   N_PZ_289 = !przyciski<1> & !przelaczniki<1> & !przelaczniki<0>;	// (1 pt, 3 inp)
 
 MACROCELL | 2 | 15 | XLXI_8/reset_not00011_MC
 ATTRIBUTES | 536871680 | 0
@@ -40,7 +40,7 @@ EQ | 1 |
 MACROCELL | 2 | 14 | XLXI_8/isOver__or0000_MC
 ATTRIBUTES | 536871680 | 0
 OUTPUTMC | 4 | 13 | 13 | 13 | 3 | 13 | 5 | 13 | 12
-INPUTS | 16 | XLXI_8/reset  | XLXI_8/explosion  | diody<3>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | XLXI_8/isCounting  | XLXI_8/stop  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_290
+INPUTS | 16 | XLXI_8/reset  | XLXI_8/explosion  | diody<3>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | XLXI_8/isCounting  | XLXI_8/stop  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_294
 INPUTMC | 16 | 3 | 7 | 3 | 6 | 13 | 13 | 1 | 13 | 1 | 1 | 1 | 12 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 9 | 3 | 13 | 1 | 14 | 1 | 4 | 1 | 11 | 1 | 6 | 2 | 5
 EQ | 6 | 
    XLXI_8/isOver__or0000 = XLXI_8/reset
@@ -48,15 +48,15 @@ EQ | 6 |
 	# diody<3> & !XLXN_17<0> & !XLXN_16<0> & !XLXN_18<0> & 
 	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & XLXI_8/isCounting & 
 	!XLXI_8/stop & !XLXN_16<3> & !XLXN_17<2> & !XLXN_17<3> & 
-	!XLXN_18<1> & N_PZ_290;	// (3 pt, 16 inp)
+	!XLXN_18<1> & N_PZ_294;	// (3 pt, 16 inp)
 
 MACROCELL | 3 | 6 | XLXI_8/explosion_MC
 ATTRIBUTES | 2148008736 | 0
 OUTPUTMC | 3 | 2 | 7 | 2 | 8 | 2 | 14
-INPUTS | 3 | N_PZ_283  | XLXI_8/explosion_not00015  | XLXI_8/explosion_not00017
+INPUTS | 3 | N_PZ_289  | XLXI_8/explosion_not00015  | XLXI_8/explosion_not00017
 INPUTMC | 3 | 2 | 13 | 2 | 3 | 2 | 4
 EQ | 3 | 
-   !XLXI_8/explosion.D = N_PZ_283;	// (1 pt, 1 inp)
+   !XLXI_8/explosion.D = N_PZ_289;	// (1 pt, 1 inp)
     XLXI_8/explosion.LH = !(!XLXI_8/explosion_not00015 & 
 	!XLXI_8/explosion_not00017);	// PTC	(1 pt, 2 inp)
 
@@ -355,7 +355,7 @@ EQ | 9 |
 MACROCELL | 1 | 13 | XLXN_17<0>_MC
 ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 22 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 4 | 1 | 14 | 1 | 3 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 13 | XLXI_8/reset  | XLXN_17<0>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_290
+INPUTS | 13 | XLXI_8/reset  | XLXN_17<0>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_294
 INPUTMC | 13 | 3 | 7 | 1 | 13 | 1 | 1 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 12 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 6 | 2 | 5
 LCT | 1 | 2 | Internal_Name
 EQ | 11 | 
@@ -363,10 +363,10 @@ EQ | 11 |
 	# !XLXI_8/reset & XLXN_16<0>
 	# !XLXI_8/reset & XLXN_16<1>
 	# !XLXI_8/reset & XLXN_16<2>
-	# !XLXI_8/reset & !N_PZ_297
+	# !XLXI_8/reset & !N_PZ_301
 	# !XLXI_8/reset & XLXN_16<3>
 	# !XLXN_17<0> & !XLXN_18<0> & !XLXN_17<1> & 
-	!XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & N_PZ_290;	// (7 pt, 13 inp)
+	!XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & N_PZ_294;	// (7 pt, 13 inp)
     XLXN_17<0>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
 	XLXI_9/counter<5> & XLXI_9/counter<6>;	// CTC	(1 pt, 7 inp)
@@ -374,15 +374,15 @@ EQ | 11 |
 MACROCELL | 1 | 1 | XLXN_16<0>_MC
 ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 24 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 4 | 1 | 14 | 2 | 11 | 2 | 10 | 1 | 3 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 13 | XLXI_8/reset  | XLXN_16<0>  | N_PZ_297  | XLXN_17<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_290
+INPUTS | 13 | XLXI_8/reset  | XLXN_16<0>  | N_PZ_301  | XLXN_17<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_294
 INPUTMC | 13 | 3 | 7 | 1 | 1 | 2 | 8 | 1 | 13 | 1 | 12 | 1 | 3 | 2 | 10 | 2 | 11 | 1 | 14 | 1 | 4 | 1 | 11 | 1 | 6 | 2 | 5
 LCT | 1 | 2 | Internal_Name
 EQ | 8 | 
    !XLXN_16<0>.T := XLXI_8/reset & !XLXN_16<0>
-	# !XLXI_8/reset & !N_PZ_297
+	# !XLXI_8/reset & !N_PZ_301
 	# !XLXN_17<0> & !XLXN_16<0> & !XLXN_18<0> & 
 	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & !XLXN_16<3> & 
-	!XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & N_PZ_290;	// (3 pt, 13 inp)
+	!XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & N_PZ_294;	// (3 pt, 13 inp)
     XLXN_16<0>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
 	XLXI_9/counter<5> & XLXI_9/counter<6>;	// CTC	(1 pt, 7 inp)
@@ -390,20 +390,20 @@ EQ | 8 |
 MACROCELL | 1 | 12 | XLXN_18<0>_MC
 ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 20 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 14 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 13 | XLXI_8/reset  | XLXN_18<0>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_290
+INPUTS | 13 | XLXI_8/reset  | XLXN_18<0>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_294
 INPUTMC | 13 | 3 | 7 | 1 | 12 | 1 | 13 | 1 | 1 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 4 | 1 | 11 | 1 | 6 | 2 | 5
 LCT | 1 | 2 | Internal_Name
 EQ | 13 | 
    XLXN_18<0>.T := XLXI_8/reset & XLXN_18<0>
 	# !XLXN_17<0> & !XLXN_16<0> & XLXN_18<0> & 
-	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & 
+	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & 
 	!XLXN_17<2> & !XLXN_17<3>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & 
+	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & 
 	!XLXN_17<2> & !XLXN_17<3> & XLXN_18<1>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & 
-	!XLXN_17<2> & !XLXN_17<3> & !N_PZ_290;	// (4 pt, 13 inp)
+	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & 
+	!XLXN_17<2> & !XLXN_17<3> & !N_PZ_294;	// (4 pt, 13 inp)
     XLXN_18<0>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
 	XLXI_9/counter<5> & XLXI_9/counter<6>;	// CTC	(1 pt, 7 inp)
@@ -411,17 +411,17 @@ EQ | 13 |
 MACROCELL | 1 | 3 | XLXN_17<1>_MC
 ATTRIBUTES | 2285896452 | 0
 OUTPUTMC | 23 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 4 | 1 | 14 | 1 | 3 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 10 | XLXI_8/reset  | XLXN_17<1>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>
+INPUTS | 10 | XLXI_8/reset  | XLXN_17<1>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>
 INPUTMC | 10 | 3 | 7 | 1 | 3 | 1 | 13 | 1 | 1 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 4 | 1 | 11
 LCT | 1 | 2 | Internal_Name
 EQ | 10 | 
    XLXN_17<1>.T := XLXI_8/reset & !XLXN_17<1>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3>
+	XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & XLXN_17<2>
+	!XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & XLXN_17<2>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & XLXN_17<3>;	// (4 pt, 10 inp)
+	!XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & XLXN_17<3>;	// (4 pt, 10 inp)
     XLXN_17<1>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
 	XLXI_9/counter<5> & XLXI_9/counter<6>;	// CTC	(1 pt, 7 inp)
@@ -429,16 +429,16 @@ EQ | 10 |
 MACROCELL | 2 | 10 | XLXN_16<1>_MC
 ATTRIBUTES | 2290090752 | 0
 OUTPUTMC | 25 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 4 | 1 | 14 | 2 | 11 | 2 | 10 | 1 | 3 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 6 | XLXI_8/reset  | XLXN_16<0>  | XLXN_16<1>  | N_PZ_297  | XLXN_16<2>  | XLXN_16<3>
+INPUTS | 6 | XLXI_8/reset  | XLXN_16<0>  | XLXN_16<1>  | N_PZ_301  | XLXN_16<2>  | XLXN_16<3>
 INPUTMC | 6 | 3 | 7 | 1 | 1 | 2 | 10 | 2 | 8 | 2 | 11 | 1 | 14
 LCT | 1 | 2 | Internal_Name
 EQ | 9 | 
    XLXN_16<1> := !XLXI_8/reset & XLXN_16<0> & XLXN_16<1>
-	# !XLXI_8/reset & XLXN_16<1> & !N_PZ_297
+	# !XLXI_8/reset & XLXN_16<1> & !N_PZ_301
 	# !XLXI_8/reset & !XLXN_16<0> & !XLXN_16<1> & 
-	XLXN_16<2> & N_PZ_297
+	XLXN_16<2> & N_PZ_301
 	# !XLXI_8/reset & !XLXN_16<0> & !XLXN_16<1> & 
-	N_PZ_297 & XLXN_16<3>;	// (4 pt, 6 inp)
+	N_PZ_301 & XLXN_16<3>;	// (4 pt, 6 inp)
     XLXN_16<1>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
 	XLXI_9/counter<5> & XLXI_9/counter<6>;	// CTC	(1 pt, 7 inp)
@@ -446,30 +446,30 @@ EQ | 9 |
 MACROCELL | 2 | 11 | XLXN_16<2>_MC
 ATTRIBUTES | 2285896452 | 0
 OUTPUTMC | 25 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 4 | 1 | 14 | 2 | 11 | 2 | 10 | 1 | 3 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 6 | XLXI_8/reset  | XLXN_16<2>  | XLXN_16<0>  | XLXN_16<1>  | N_PZ_297  | XLXN_16<3>
+INPUTS | 6 | XLXI_8/reset  | XLXN_16<2>  | XLXN_16<0>  | XLXN_16<1>  | N_PZ_301  | XLXN_16<3>
 INPUTMC | 6 | 3 | 7 | 2 | 11 | 1 | 1 | 2 | 10 | 2 | 8 | 1 | 14
 LCT | 1 | 2 | Internal_Name
 EQ | 8 | 
    XLXN_16<2>.T := XLXI_8/reset & !XLXN_16<2>
 	# !XLXI_8/reset & !XLXN_16<0> & !XLXN_16<1> & 
-	XLXN_16<2> & N_PZ_297
+	XLXN_16<2> & N_PZ_301
 	# !XLXI_8/reset & !XLXN_16<0> & !XLXN_16<1> & 
-	N_PZ_297 & XLXN_16<3>;	// (3 pt, 6 inp)
+	N_PZ_301 & XLXN_16<3>;	// (3 pt, 6 inp)
     XLXN_16<2>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
 	XLXI_9/counter<5> & XLXI_9/counter<6>;	// CTC	(1 pt, 7 inp)
 
-MACROCELL | 2 | 8 | N_PZ_297_MC
+MACROCELL | 2 | 8 | N_PZ_301_MC
 ATTRIBUTES | 536871680 | 0
 OUTPUTMC | 16 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 4 | 1 | 14 | 2 | 11 | 2 | 10 | 1 | 3 | 1 | 12 | 1 | 1 | 1 | 13
 INPUTS | 4 | XLXI_8/explosion  | diody<3>  | XLXI_8/isCounting  | XLXI_8/stop
 INPUTMC | 4 | 3 | 6 | 13 | 13 | 2 | 9 | 3 | 13
 EQ | 2 | 
-   N_PZ_297 = !XLXI_8/explosion & diody<3> & XLXI_8/isCounting & 
+   N_PZ_301 = !XLXI_8/explosion & diody<3> & XLXI_8/isCounting & 
 	!XLXI_8/stop;	// (1 pt, 4 inp)
 
 MACROCELL | 2 | 9 | XLXI_8/isCounting_MC
-ATTRIBUTES | 2290090816 | 0
+ATTRIBUTES | 2290090820 | 0
 OUTPUTMC | 2 | 2 | 8 | 2 | 14
 INPUTS | 2 | XLXI_8/reset  | XLXI_8/isCounting__or0001
 INPUTMC | 2 | 3 | 7 | 2 | 7
@@ -512,7 +512,7 @@ EQ | 2 |
 MACROCELL | 1 | 14 | XLXN_16<3>_MC
 ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 25 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 4 | 1 | 14 | 2 | 11 | 2 | 10 | 1 | 3 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 13 | XLXI_8/reset  | XLXN_16<3>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_17<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_290
+INPUTS | 13 | XLXI_8/reset  | XLXN_16<3>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_17<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_294
 INPUTMC | 13 | 3 | 7 | 1 | 14 | 1 | 1 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 13 | 1 | 12 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 6 | 2 | 5
 LCT | 1 | 2 | Internal_Name
 EQ | 10 | 
@@ -520,9 +520,9 @@ EQ | 10 |
 	# !XLXI_8/reset & XLXN_16<0>
 	# !XLXI_8/reset & XLXN_16<1>
 	# !XLXI_8/reset & XLXN_16<2>
-	# !XLXI_8/reset & !N_PZ_297
+	# !XLXI_8/reset & !N_PZ_301
 	# !XLXN_17<0> & !XLXN_18<0> & !XLXN_17<1> & 
-	!XLXN_16<3> & !XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & N_PZ_290;	// (6 pt, 13 inp)
+	!XLXN_16<3> & !XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & N_PZ_294;	// (6 pt, 13 inp)
     XLXN_16<3>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
 	XLXI_9/counter<5> & XLXI_9/counter<6>;	// CTC	(1 pt, 7 inp)
@@ -530,15 +530,15 @@ EQ | 10 |
 MACROCELL | 1 | 4 | XLXN_17<2>_MC
 ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 23 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 4 | 1 | 14 | 1 | 3 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 10 | XLXI_8/reset  | XLXN_17<2>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<3>
+INPUTS | 10 | XLXI_8/reset  | XLXN_17<2>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<3>
 INPUTMC | 10 | 3 | 7 | 1 | 4 | 1 | 13 | 1 | 1 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 11
 LCT | 1 | 2 | Internal_Name
 EQ | 9 | 
    XLXN_17<2>.T := XLXI_8/reset & XLXN_17<2>
 	# !XLXN_17<0> & !XLXN_16<0> & !XLXN_17<1> & 
-	!XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & XLXN_17<2>
+	!XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & XLXN_17<2>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & 
+	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & 
 	XLXN_17<3>;	// (3 pt, 10 inp)
     XLXN_17<2>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
@@ -547,23 +547,23 @@ EQ | 9 |
 MACROCELL | 1 | 11 | XLXN_17<3>_MC
 ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 23 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 4 | 1 | 14 | 1 | 3 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 13 | XLXI_8/reset  | XLXN_17<3>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<2>  | XLXN_18<0>  | XLXN_18<1>  | N_PZ_290
+INPUTS | 13 | XLXI_8/reset  | XLXN_17<3>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<2>  | XLXN_18<0>  | XLXN_18<1>  | N_PZ_294
 INPUTMC | 13 | 3 | 7 | 1 | 11 | 1 | 13 | 1 | 1 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 4 | 1 | 12 | 1 | 6 | 2 | 5
 LCT | 1 | 2 | Internal_Name
 EQ | 16 | 
    XLXN_17<3>.T := XLXI_8/reset & XLXN_17<3>
 	# !XLXN_17<0> & !XLXN_16<0> & !XLXN_17<1> & 
-	!XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & !XLXN_17<2> & 
+	!XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & !XLXN_17<2> & 
 	XLXN_17<3>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & 
+	XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & 
 	!XLXN_16<3> & !XLXN_17<2>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & 
+	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & 
 	!XLXN_17<2> & XLXN_18<1>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & 
-	!XLXN_17<2> & !N_PZ_290;	// (5 pt, 13 inp)
+	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & 
+	!XLXN_17<2> & !N_PZ_294;	// (5 pt, 13 inp)
     XLXN_17<3>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
 	XLXI_9/counter<5> & XLXI_9/counter<6>;	// CTC	(1 pt, 7 inp)
@@ -571,19 +571,19 @@ EQ | 16 |
 MACROCELL | 1 | 6 | XLXN_18<1>_MC
 ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 21 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 1 | 5 | 1 | 6 | 1 | 11 | 1 | 14 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 14 | XLXI_8/reset  | XLXN_18<1>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<2>  | XLXN_18<3>
+INPUTS | 14 | XLXI_8/reset  | XLXN_18<1>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<2>  | XLXN_18<3>
 INPUTMC | 14 | 3 | 7 | 1 | 6 | 1 | 13 | 1 | 1 | 1 | 12 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 4 | 1 | 11 | 1 | 5 | 1 | 7
 LCT | 1 | 2 | Internal_Name
 EQ | 13 | 
    XLXN_18<1>.T := XLXI_8/reset & XLXN_18<1>
 	# !XLXN_17<0> & !XLXN_16<0> & !XLXN_18<0> & 
-	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & 
+	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & 
 	!XLXN_17<2> & !XLXN_17<3> & XLXN_18<1>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & 
+	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & 
 	!XLXN_16<3> & !XLXN_17<2> & !XLXN_17<3> & XLXN_18<2>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & 
+	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & 
 	!XLXN_16<3> & !XLXN_17<2> & !XLXN_17<3> & XLXN_18<3>;	// (4 pt, 14 inp)
     XLXN_18<1>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
@@ -592,36 +592,36 @@ EQ | 13 |
 MACROCELL | 1 | 5 | XLXN_18<2>_MC
 ATTRIBUTES | 2285896452 | 0
 OUTPUTMC | 16 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 2 | 5 | 1 | 5 | 1 | 6 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 14 | XLXI_8/reset  | XLXN_18<2>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_290
+INPUTS | 14 | XLXI_8/reset  | XLXN_18<2>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | N_PZ_294
 INPUTMC | 14 | 3 | 7 | 1 | 5 | 1 | 13 | 1 | 1 | 1 | 12 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 4 | 1 | 11 | 1 | 6 | 2 | 5
 LCT | 1 | 2 | Internal_Name
 EQ | 7 | 
    XLXN_18<2>.T := XLXI_8/reset & !XLXN_18<2>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & 
-	!XLXN_16<3> & !XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & !N_PZ_290;	// (2 pt, 14 inp)
+	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & 
+	!XLXN_16<3> & !XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & !N_PZ_294;	// (2 pt, 14 inp)
     XLXN_18<2>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
 	!XLXI_9/counter<2> & !XLXI_9/counter<3> & !XLXI_9/counter<4> & 
 	XLXI_9/counter<5> & XLXI_9/counter<6>;	// CTC	(1 pt, 7 inp)
 
-MACROCELL | 2 | 5 | N_PZ_290_MC
+MACROCELL | 2 | 5 | N_PZ_294_MC
 ATTRIBUTES | 536871680 | 0
 OUTPUTMC | 7 | 1 | 5 | 1 | 11 | 1 | 14 | 1 | 12 | 1 | 1 | 1 | 13 | 2 | 14
 INPUTS | 3 | XLXN_18<2>  | XLXN_18<3>  | N_PZ_205
 INPUTMC | 3 | 1 | 5 | 1 | 7 | 2 | 6
 EQ | 1 | 
-   N_PZ_290 = !XLXN_18<2> & !XLXN_18<3> & N_PZ_205;	// (1 pt, 3 inp)
+   N_PZ_294 = !XLXN_18<2> & !XLXN_18<3> & N_PZ_205;	// (1 pt, 3 inp)
 
 MACROCELL | 1 | 7 | XLXN_18<3>_MC
 ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 15 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 2 | 5 | 1 | 6 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 14 | XLXI_8/reset  | XLXN_18<3>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | XLXN_18<2>
+INPUTS | 14 | XLXI_8/reset  | XLXN_18<3>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | XLXN_18<2>
 INPUTMC | 14 | 3 | 7 | 1 | 7 | 1 | 13 | 1 | 1 | 1 | 12 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 4 | 1 | 11 | 1 | 6 | 1 | 5
 LCT | 1 | 2 | Internal_Name
 EQ | 8 | 
    XLXN_18<3>.T := XLXI_8/reset & XLXN_18<3>
 	# !XLXN_17<0> & !XLXN_16<0> & !XLXN_18<0> & 
-	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & 
+	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & 
 	!XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & !XLXN_18<2> & 
 	XLXN_18<3>;	// (2 pt, 14 inp)
     XLXN_18<3>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
@@ -640,13 +640,13 @@ EQ | 2 |
 MACROCELL | 1 | 8 | XLXN_19<0>_MC
 ATTRIBUTES | 2285896452 | 0
 OUTPUTMC | 12 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9 | 2 | 6 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 16 | XLXI_8/reset  | XLXN_19<0>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | N_PZ_205
+INPUTS | 16 | XLXI_8/reset  | XLXN_19<0>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | N_PZ_205
 INPUTMC | 16 | 3 | 7 | 1 | 8 | 1 | 13 | 1 | 1 | 1 | 12 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 4 | 1 | 11 | 1 | 6 | 1 | 5 | 1 | 7 | 2 | 6
 LCT | 1 | 2 | Internal_Name
 EQ | 8 | 
    XLXN_19<0>.T := XLXI_8/reset & !XLXN_19<0>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & 
+	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & 
 	!XLXN_16<3> & !XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & 
 	!XLXN_18<2> & !XLXN_18<3> & !N_PZ_205;	// (2 pt, 16 inp)
     XLXN_19<0>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
@@ -656,13 +656,13 @@ EQ | 8 |
 MACROCELL | 1 | 10 | XLXN_19<1>_MC
 ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 12 | 1 | 10 | 1 | 15 | 1 | 9 | 2 | 6 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 17 | XLXI_8/reset  | XLXN_19<1>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | N_PZ_205  | XLXN_19<0>
+INPUTS | 17 | XLXI_8/reset  | XLXN_19<1>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | N_PZ_205  | XLXN_19<0>
 INPUTMC | 17 | 3 | 7 | 1 | 10 | 1 | 13 | 1 | 1 | 1 | 12 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 4 | 1 | 11 | 1 | 6 | 1 | 5 | 1 | 7 | 2 | 6 | 1 | 8
 LCT | 1 | 2 | Internal_Name
 EQ | 8 | 
    XLXN_19<1>.T := XLXI_8/reset & XLXN_19<1>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & 
+	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & 
 	!XLXN_16<3> & !XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & 
 	!XLXN_18<2> & !XLXN_18<3> & !N_PZ_205 & !XLXN_19<0>;	// (2 pt, 17 inp)
     XLXN_19<1>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
@@ -670,15 +670,15 @@ EQ | 8 |
 	XLXI_9/counter<5> & XLXI_9/counter<6>;	// CTC	(1 pt, 7 inp)
 
 MACROCELL | 1 | 15 | XLXN_19<2>_MC
-ATTRIBUTES | 2285896452 | 0
+ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 11 | 1 | 15 | 1 | 9 | 2 | 6 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 18 | XLXI_8/reset  | XLXN_19<2>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | N_PZ_205  | XLXN_19<0>  | XLXN_19<1>
+INPUTS | 18 | XLXI_8/reset  | XLXN_19<2>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | N_PZ_205  | XLXN_19<0>  | XLXN_19<1>
 INPUTMC | 18 | 3 | 7 | 1 | 15 | 1 | 13 | 1 | 1 | 1 | 12 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 4 | 1 | 11 | 1 | 6 | 1 | 5 | 1 | 7 | 2 | 6 | 1 | 8 | 1 | 10
 LCT | 1 | 2 | Internal_Name
 EQ | 8 | 
-   XLXN_19<2>.T := XLXI_8/reset & !XLXN_19<2>
+   XLXN_19<2>.T := XLXI_8/reset & XLXN_19<2>
 	# !XLXI_8/reset & !XLXN_17<0> & !XLXN_16<0> & 
-	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & 
+	!XLXN_18<0> & !XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & 
 	!XLXN_16<3> & !XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & 
 	!XLXN_18<2> & !XLXN_18<3> & !N_PZ_205 & !XLXN_19<0> & !XLXN_19<1>;	// (2 pt, 18 inp)
     XLXN_19<2>.CLK = XLXI_9/counter<0> & XLXI_9/counter<1> & 
@@ -688,13 +688,13 @@ EQ | 8 |
 MACROCELL | 1 | 9 | XLXN_19<3>_MC
 ATTRIBUTES | 2285896448 | 0
 OUTPUTMC | 10 | 1 | 9 | 2 | 6 | 2 | 12 | 15 | 12 | 15 | 15 | 1 | 2 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
-INPUTS | 18 | XLXI_8/reset  | XLXN_19<3>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_297  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<2>
+INPUTS | 18 | XLXI_8/reset  | XLXN_19<3>  | XLXN_17<0>  | XLXN_16<0>  | XLXN_18<0>  | XLXN_17<1>  | XLXN_16<1>  | XLXN_16<2>  | N_PZ_301  | XLXN_16<3>  | XLXN_17<2>  | XLXN_17<3>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<2>
 INPUTMC | 18 | 3 | 7 | 1 | 9 | 1 | 13 | 1 | 1 | 1 | 12 | 1 | 3 | 2 | 10 | 2 | 11 | 2 | 8 | 1 | 14 | 1 | 4 | 1 | 11 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15
 LCT | 1 | 2 | Internal_Name
 EQ | 9 | 
    XLXN_19<3>.T := XLXI_8/reset & XLXN_19<3>
 	# !XLXN_17<0> & !XLXN_16<0> & !XLXN_18<0> & 
-	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_297 & !XLXN_16<3> & 
+	!XLXN_17<1> & !XLXN_16<1> & !XLXN_16<2> & N_PZ_301 & !XLXN_16<3> & 
 	!XLXN_17<2> & !XLXN_17<3> & !XLXN_18<1> & !XLXN_18<2> & 
 	!XLXN_18<3> & !XLXN_19<0> & !XLXN_19<1> & !XLXN_19<2> & 
 	XLXN_19<3>;	// (2 pt, 18 inp)
@@ -728,29 +728,29 @@ EQ | 5 |
 
 MACROCELL | 15 | 12 | katody_7seg<0>_MC
 ATTRIBUTES | 1074004738 | 0
-INPUTS | 19 | XLXN_16<3>  | kropka  | XLXN_10<1>  | N_PZ_267  | XLXN_17<3>  | XLXN_18<3>  | XLXN_19<3>  | XLXN_17<0>  | XLXN_17<1>  | XLXN_17<2>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_18<0>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<2>
+INPUTS | 19 | XLXN_16<3>  | kropka  | XLXN_10<1>  | N_PZ_266  | XLXN_17<3>  | XLXN_18<3>  | XLXN_19<3>  | XLXN_17<0>  | XLXN_17<1>  | XLXN_17<2>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_18<0>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<2>
 INPUTMC | 19 | 1 | 14 | 15 | 5 | 3 | 8 | 2 | 12 | 1 | 11 | 1 | 7 | 1 | 9 | 1 | 13 | 1 | 3 | 1 | 4 | 1 | 1 | 2 | 10 | 2 | 11 | 1 | 12 | 1 | 6 | 1 | 5 | 1 | 8 | 1 | 10 | 1 | 15
 EQ | 20 | 
-   katody_7seg<0> = XLXN_16<3> & kropka & !XLXN_10<1> & !N_PZ_267
-	# XLXN_17<3> & !kropka & !XLXN_10<1> & !N_PZ_267
-	# XLXN_18<3> & kropka & XLXN_10<1> & !N_PZ_267
-	# XLXN_19<3> & !kropka & XLXN_10<1> & !N_PZ_267
+   katody_7seg<0> = XLXN_16<3> & kropka & !XLXN_10<1> & !N_PZ_266
+	# XLXN_17<3> & !kropka & !XLXN_10<1> & !N_PZ_266
+	# XLXN_18<3> & kropka & XLXN_10<1> & !N_PZ_266
+	# XLXN_19<3> & !kropka & XLXN_10<1> & !N_PZ_266
 	# XLXN_17<0> & !XLXN_17<1> & !XLXN_17<2> & !kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# !XLXN_17<0> & !XLXN_17<1> & XLXN_17<2> & !kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# XLXN_16<0> & !XLXN_16<1> & !XLXN_16<2> & kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# !XLXN_16<0> & !XLXN_16<1> & XLXN_16<2> & kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# XLXN_18<0> & !XLXN_18<1> & !XLXN_18<2> & kropka & 
-	XLXN_10<1> & !N_PZ_267
+	XLXN_10<1> & !N_PZ_266
 	# !XLXN_18<0> & !XLXN_18<1> & XLXN_18<2> & kropka & 
-	XLXN_10<1> & !N_PZ_267
+	XLXN_10<1> & !N_PZ_266
 	# XLXN_19<0> & !XLXN_19<1> & !XLXN_19<2> & !kropka & 
-	XLXN_10<1> & !N_PZ_267
+	XLXN_10<1> & !N_PZ_266
 	# !XLXN_19<0> & !XLXN_19<1> & XLXN_19<2> & !kropka & 
-	XLXN_10<1> & !N_PZ_267;	// (12 pt, 19 inp)
+	XLXN_10<1> & !N_PZ_266;	// (12 pt, 19 inp)
 
 MACROCELL | 15 | 5 | kropka_MC
 ATTRIBUTES | 2286158598 | 0
@@ -775,13 +775,13 @@ EQ | 4 |
 	XLXI_1/counter<11> & !XLXI_1/counter<7> & N_PZ_219 & XLXI_1/counter<8> & 
 	XLXI_1/counter<9> & XLXI_1/counter<12>;	// CTC	(1 pt, 8 inp)
 
-MACROCELL | 2 | 12 | N_PZ_267_MC
+MACROCELL | 2 | 12 | N_PZ_266_MC
 ATTRIBUTES | 536871680 | 0
 OUTPUTMC | 5 | 15 | 12 | 15 | 15 | 15 | 10 | 15 | 14 | 13 | 15
 INPUTS | 14 | XLXN_17<1>  | XLXN_17<2>  | XLXN_17<3>  | kropka  | XLXN_10<1>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_16<3>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | XLXN_19<1>  | XLXN_19<2>  | XLXN_19<3>
 INPUTMC | 14 | 1 | 3 | 1 | 4 | 1 | 11 | 15 | 5 | 3 | 8 | 2 | 10 | 2 | 11 | 1 | 14 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 10 | 1 | 15 | 1 | 9
 EQ | 8 | 
-   N_PZ_267 = !XLXN_17<1> & !XLXN_17<2> & XLXN_17<3> & !kropka & 
+   N_PZ_266 = !XLXN_17<1> & !XLXN_17<2> & XLXN_17<3> & !kropka & 
 	!XLXN_10<1>
 	# !XLXN_16<1> & !XLXN_16<2> & XLXN_16<3> & kropka & 
 	!XLXN_10<1>
@@ -792,29 +792,29 @@ EQ | 8 |
 
 MACROCELL | 15 | 15 | katody_7seg<1>_MC
 ATTRIBUTES | 1074004738 | 0
-INPUTS | 19 | XLXN_16<3>  | kropka  | XLXN_10<1>  | N_PZ_267  | XLXN_17<3>  | XLXN_18<3>  | XLXN_19<3>  | XLXN_17<0>  | XLXN_17<1>  | XLXN_17<2>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_18<0>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<2>
+INPUTS | 19 | XLXN_16<3>  | kropka  | XLXN_10<1>  | N_PZ_266  | XLXN_17<3>  | XLXN_18<3>  | XLXN_19<3>  | XLXN_17<0>  | XLXN_17<1>  | XLXN_17<2>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_18<0>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<2>
 INPUTMC | 19 | 1 | 14 | 15 | 5 | 3 | 8 | 2 | 12 | 1 | 11 | 1 | 7 | 1 | 9 | 1 | 13 | 1 | 3 | 1 | 4 | 1 | 1 | 2 | 10 | 2 | 11 | 1 | 12 | 1 | 6 | 1 | 5 | 1 | 8 | 1 | 10 | 1 | 15
 EQ | 20 | 
-   katody_7seg<1> = XLXN_16<3> & kropka & !XLXN_10<1> & !N_PZ_267
-	# XLXN_17<3> & !kropka & !XLXN_10<1> & !N_PZ_267
-	# XLXN_18<3> & kropka & XLXN_10<1> & !N_PZ_267
-	# XLXN_19<3> & !kropka & XLXN_10<1> & !N_PZ_267
+   katody_7seg<1> = XLXN_16<3> & kropka & !XLXN_10<1> & !N_PZ_266
+	# XLXN_17<3> & !kropka & !XLXN_10<1> & !N_PZ_266
+	# XLXN_18<3> & kropka & XLXN_10<1> & !N_PZ_266
+	# XLXN_19<3> & !kropka & XLXN_10<1> & !N_PZ_266
 	# XLXN_17<0> & !XLXN_17<1> & XLXN_17<2> & !kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# !XLXN_17<0> & XLXN_17<1> & XLXN_17<2> & !kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# XLXN_16<0> & !XLXN_16<1> & XLXN_16<2> & kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# !XLXN_16<0> & XLXN_16<1> & XLXN_16<2> & kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# XLXN_18<0> & !XLXN_18<1> & XLXN_18<2> & kropka & 
-	XLXN_10<1> & !N_PZ_267
+	XLXN_10<1> & !N_PZ_266
 	# !XLXN_18<0> & XLXN_18<1> & XLXN_18<2> & kropka & 
-	XLXN_10<1> & !N_PZ_267
+	XLXN_10<1> & !N_PZ_266
 	# XLXN_19<0> & !XLXN_19<1> & XLXN_19<2> & !kropka & 
-	XLXN_10<1> & !N_PZ_267
+	XLXN_10<1> & !N_PZ_266
 	# !XLXN_19<0> & XLXN_19<1> & XLXN_19<2> & !kropka & 
-	XLXN_10<1> & !N_PZ_267;	// (12 pt, 19 inp)
+	XLXN_10<1> & !N_PZ_266;	// (12 pt, 19 inp)
 
 MACROCELL | 15 | 4 | katody_7seg<2>_MC
 ATTRIBUTES | 1074004738 | 0
@@ -844,10 +844,10 @@ EQ | 12 |
 
 MACROCELL | 15 | 10 | katody_7seg<3>_MC
 ATTRIBUTES | 1074004738 | 0
-INPUTS | 19 | N_PZ_267  | XLXN_17<0>  | XLXN_17<1>  | XLXN_17<3>  | kropka  | XLXN_10<1>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<3>  | XLXN_18<0>  | XLXN_18<1>  | XLXN_18<3>  | XLXN_17<2>  | XLXN_16<2>  | XLXN_18<2>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<3>  | XLXN_19<2>
+INPUTS | 19 | N_PZ_266  | XLXN_17<0>  | XLXN_17<1>  | XLXN_17<3>  | kropka  | XLXN_10<1>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<3>  | XLXN_18<0>  | XLXN_18<1>  | XLXN_18<3>  | XLXN_17<2>  | XLXN_16<2>  | XLXN_18<2>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<3>  | XLXN_19<2>
 INPUTMC | 19 | 2 | 12 | 1 | 13 | 1 | 3 | 1 | 11 | 15 | 5 | 3 | 8 | 1 | 1 | 2 | 10 | 1 | 14 | 1 | 12 | 1 | 6 | 1 | 7 | 1 | 4 | 2 | 11 | 1 | 5 | 1 | 8 | 1 | 10 | 1 | 9 | 1 | 15
 EQ | 25 | 
-   !katody_7seg<3> = N_PZ_267
+   !katody_7seg<3> = N_PZ_266
 	# !XLXN_17<0> & XLXN_17<1> & !XLXN_17<3> & !kropka & 
 	!XLXN_10<1>
 	# !XLXN_16<0> & XLXN_16<1> & !XLXN_16<3> & kropka & 
@@ -897,10 +897,10 @@ EQ | 16 |
 
 MACROCELL | 15 | 14 | katody_7seg<5>_MC
 ATTRIBUTES | 1074004738 | 0
-INPUTS | 19 | N_PZ_267  | XLXN_17<0>  | XLXN_17<1>  | XLXN_17<2>  | kropka  | XLXN_10<1>  | XLXN_17<3>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_16<3>  | XLXN_18<0>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<2>  | XLXN_19<3>
+INPUTS | 19 | N_PZ_266  | XLXN_17<0>  | XLXN_17<1>  | XLXN_17<2>  | kropka  | XLXN_10<1>  | XLXN_17<3>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_16<3>  | XLXN_18<0>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_18<3>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<2>  | XLXN_19<3>
 INPUTMC | 19 | 2 | 12 | 1 | 13 | 1 | 3 | 1 | 4 | 15 | 5 | 3 | 8 | 1 | 11 | 1 | 1 | 2 | 10 | 2 | 11 | 1 | 14 | 1 | 12 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 15 | 1 | 9
 EQ | 25 | 
-   !katody_7seg<5> = N_PZ_267
+   !katody_7seg<5> = N_PZ_266
 	# !XLXN_17<0> & !XLXN_17<1> & !XLXN_17<2> & !kropka & 
 	!XLXN_10<1>
 	# !XLXN_17<0> & XLXN_17<2> & !XLXN_17<3> & !kropka & 
@@ -928,29 +928,29 @@ EQ | 25 |
 
 MACROCELL | 13 | 15 | katody_7seg<6>_MC
 ATTRIBUTES | 1074004738 | 0
-INPUTS | 19 | XLXN_16<3>  | kropka  | XLXN_10<1>  | N_PZ_267  | XLXN_17<3>  | XLXN_18<3>  | XLXN_19<3>  | XLXN_17<0>  | XLXN_17<1>  | XLXN_17<2>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_18<0>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<2>
+INPUTS | 19 | XLXN_16<3>  | kropka  | XLXN_10<1>  | N_PZ_266  | XLXN_17<3>  | XLXN_18<3>  | XLXN_19<3>  | XLXN_17<0>  | XLXN_17<1>  | XLXN_17<2>  | XLXN_16<0>  | XLXN_16<1>  | XLXN_16<2>  | XLXN_18<0>  | XLXN_18<1>  | XLXN_18<2>  | XLXN_19<0>  | XLXN_19<1>  | XLXN_19<2>
 INPUTMC | 19 | 1 | 14 | 15 | 5 | 3 | 8 | 2 | 12 | 1 | 11 | 1 | 7 | 1 | 9 | 1 | 13 | 1 | 3 | 1 | 4 | 1 | 1 | 2 | 10 | 2 | 11 | 1 | 12 | 1 | 6 | 1 | 5 | 1 | 8 | 1 | 10 | 1 | 15
 EQ | 20 | 
-   katody_7seg<6> = XLXN_16<3> & kropka & !XLXN_10<1> & !N_PZ_267
-	# XLXN_17<3> & !kropka & !XLXN_10<1> & !N_PZ_267
-	# XLXN_18<3> & kropka & XLXN_10<1> & !N_PZ_267
-	# XLXN_19<3> & !kropka & XLXN_10<1> & !N_PZ_267
+   katody_7seg<6> = XLXN_16<3> & kropka & !XLXN_10<1> & !N_PZ_266
+	# XLXN_17<3> & !kropka & !XLXN_10<1> & !N_PZ_266
+	# XLXN_18<3> & kropka & XLXN_10<1> & !N_PZ_266
+	# XLXN_19<3> & !kropka & XLXN_10<1> & !N_PZ_266
 	# XLXN_17<0> & XLXN_17<1> & XLXN_17<2> & !kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# XLXN_17<0> & !XLXN_17<1> & !XLXN_17<2> & !kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# XLXN_16<0> & XLXN_16<1> & XLXN_16<2> & kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# XLXN_16<0> & !XLXN_16<1> & !XLXN_16<2> & kropka & 
-	!XLXN_10<1> & !N_PZ_267
+	!XLXN_10<1> & !N_PZ_266
 	# XLXN_18<0> & XLXN_18<1> & XLXN_18<2> & kropka & 
-	XLXN_10<1> & !N_PZ_267
+	XLXN_10<1> & !N_PZ_266
 	# XLXN_18<0> & !XLXN_18<1> & !XLXN_18<2> & kropka & 
-	XLXN_10<1> & !N_PZ_267
+	XLXN_10<1> & !N_PZ_266
 	# XLXN_19<0> & XLXN_19<1> & XLXN_19<2> & !kropka & 
-	XLXN_10<1> & !N_PZ_267
+	XLXN_10<1> & !N_PZ_266
 	# XLXN_19<0> & !XLXN_19<1> & !XLXN_19<2> & !kropka & 
-	XLXN_10<1> & !N_PZ_267;	// (12 pt, 19 inp)
+	XLXN_10<1> & !N_PZ_266;	// (12 pt, 19 inp)
 
 MACROCELL | 10 | 12 | segment<0>_MC
 ATTRIBUTES | 1074004738 | 0
