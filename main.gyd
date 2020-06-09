@@ -1,33 +1,66 @@
 Pin Freeze File:  version P.20131013
 
 2C256144 XC2C256-6-TQ144
-clock S:PIN32
-XLXN_2 S:PIN143
+clock S:PIN38
+przelaczniki<0> S:PIN39
+przelaczniki<1> S:PIN124
+przyciski<0> S:PIN143
+przyciski<1> S:PIN94
+diody<0> S:PIN69
+diody<1> S:PIN68
+diody<2> S:PIN66
+diody<3> S:PIN64
+katody_7seg<0> S:PIN56
+katody_7seg<1> S:PIN53
+katody_7seg<2> S:PIN60
+katody_7seg<3> S:PIN58
+katody_7seg<4> S:PIN57
+katody_7seg<5> S:PIN54
+katody_7seg<6> S:PIN61
+kropka S:PIN59
+segment<0> S:PIN126
+segment<1> S:PIN128
+segment<2> S:PIN129
+segment<3> S:PIN130
 
 
 ;The remaining section of the .gyd file is for documentation purposes only.
 ;It shows where your internal equations were placed in the last successful fit.
 
-PARTITION FB1_1 XLXI_1/counter<10> XLXI_1/counter<11> XLXN_2 XLXI_1/counter<5>
-		 XLXI_1/counter<12> XLXI_1/counter<6> XLXI_1/counter<13> XLXI_1/counter<14>
-		 XLXI_1/counter<15> XLXI_1/counter<16> XLXI_1/counter<17> XLXI_1/counter<7>
-		 XLXI_1/counter<8> XLXI_1/counter<9> XLXI_1/counter<18> XLXI_1/counter<19>
+PARTITION FB1_1 XLXI_1/counter<11> XLXI_1/counter<10> XLXI_9/counter<1> XLXI_9/counter<0>
+		 XLXI_1/counter<7> XLXI_1/counter<6> N_PZ_227 XLXI_1/counter<5>
+		 XLXI_1/counter<4> XLXI_1/counter<3> XLXI_1/counter<2> XLXI_1/counter<9>
+		 XLXI_1/counter<8> XLXI_1/counter<12> XLXI_1/counter<1> XLXI_1/counter<0>
 		
-PARTITION FB2_8 XLXI_1/counter<0> XLXI_1/counter<1> XLXI_1/counter<2> XLXI_1/counter<3>
+PARTITION FB2_1 N_PZ_213 XLXN_18<0> XLXN_16<2> XLXN_17<1>
+		 XLXN_17<2> XLXN_18<2> XLXN_18<1> XLXN_18<3>
+		 XLXN_19<0> XLXN_19<3> XLXN_19<1> XLXN_17<0>
+		 XLXN_16<3> XLXN_16<0> XLXN_17<3> XLXN_19<2>
 		
-PARTITION FB2_16 XLXI_1/counter<4>
+PARTITION FB3_4 XLXI_8/explosion_not00017
+PARTITION FB3_6 N_PZ_294 XLXI_8/reset_not00011 XLXI_8/explosion_not00015 N_PZ_304
+		 N_PZ_289 XLXI_8/isCounting XLXN_16<1> N_PZ_277
+		 XLXI_8/stop_not00016 katody_7seg<2>_BUFR XLXI_8/stop
+PARTITION FB4_7 XLXI_8/explosion XLXI_8/reset XLXN_10<1> XLXI_9/counter<3>
+		 XLXI_9/counter<4>
+PARTITION FB4_13 XLXI_9/counter<6>
+PARTITION FB4_15 XLXI_9/counter<5> XLXI_9/counter<2>
 
 
 
 
 
 
+PARTITION FB11_13 segment<0> segment<1> segment<2> segment<3>
+		
 
 
+PARTITION FB14_4 diody<0>
+PARTITION FB14_6 diody<1>
+PARTITION FB14_13 diody<2> diody<3>
+PARTITION FB14_16 katody_7seg<6>
 
-
-
-
-
-
+PARTITION FB16_5 katody_7seg<2> kropka
+PARTITION FB16_11 katody_7seg<3> katody_7seg<4> katody_7seg<0>
+PARTITION FB16_15 katody_7seg<5> katody_7seg<1>
 
