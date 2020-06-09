@@ -44,7 +44,7 @@ signal explosion : std_logic := '0';
 signal u : std_logic_vector(3 downto 0) := "0100";
 signal s0 : std_logic_vector(3 downto 0) := "0010";
 signal s1 : std_logic_vector(3 downto 0) := "0100";
-signal m : std_logic_vector(3 downto 0) := "0101";
+signal m : std_logic_vector(3 downto 0) := "0001";
 
 begin
 	diody <= "0000" when isOver = '1' else "1111";
@@ -89,7 +89,7 @@ begin
 				u <= "0100";
 				s0 <= "0010";
 				s1 <= "0100";
-				m <= "0101";
+				m <= "0001";
 			elsif explosion = '1' then
 				isOver <= '1';
 			elsif stop = '1' then
