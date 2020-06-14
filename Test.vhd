@@ -61,9 +61,9 @@ BEGIN
    tb : PROCESS
    BEGIN
 		przyciski <= "11";
-		przelaczniki <= "00";
+		przelaczniki <= "11";
 		
-		wait for 3000 ms;
+		wait for 1000 ms;
 		przyciski <= "01";
 		wait for 120 ms;
 		przyciski <= "11";

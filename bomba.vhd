@@ -43,7 +43,7 @@ signal explosion : std_logic := '0';
 
 signal u : std_logic_vector(3 downto 0) := "0100";
 signal s0 : std_logic_vector(3 downto 0) := "0010";
-signal s1 : std_logic_vector(3 downto 0) := "0100";
+signal s1 : std_logic_vector(3 downto 0) := "0001";
 signal m : std_logic_vector(3 downto 0) := "0001";
 
 begin
@@ -55,20 +55,23 @@ begin
 	
 	process(przelaczniki, przyciski) begin
 		if przelaczniki = "00" then
-			if przyciski(1) = '0' then	
+			if przyciski(0) = '0' then
+				explosion <= '1';
+				reset <= '0';
+			elsif przyciski(1) = '0' then	
 				reset <= '1';
 				stop <= '0';
 				explosion <= '0';
-			elsif przyciski(0) = '0' then
-				explosion <= '1';
 			else
 				reset <= '0';
 			end if;
 		elsif przelaczniki = "11" then
-			if przyciski(1) = '0' then
-				stop <= '1';
-			elsif przyciski(0) = '0' then
+			if przyciski(0) = '0' then
 				explosion <= '1';
+				reset <= '0';
+			elsif przyciski(1) = '0' then
+				stop <= '1';
+				reset <= '0';
 			else
 				reset <= '0';
 			end if;
@@ -88,7 +91,7 @@ begin
 				isCounting <= '1';
 				u <= "0100";
 				s0 <= "0010";
-				s1 <= "0100";
+				s1 <= "0001";
 				m <= "0001";
 			elsif explosion = '1' then
 				isOver <= '1';
